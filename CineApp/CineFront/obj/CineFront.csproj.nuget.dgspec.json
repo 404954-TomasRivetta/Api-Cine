@@ -1,20 +1,28 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+=======
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+>>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
   },
   "projects": {
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\obj\\",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +47,16 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +76,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+>>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
         }
       }
     }

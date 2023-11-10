@@ -1,0 +1,5 @@
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.csproj.CoreCompileInputs.cache
