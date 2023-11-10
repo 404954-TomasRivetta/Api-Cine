@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
         "projectName": "CineApi",
-        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,17 +40,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -59,8 +51,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

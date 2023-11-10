@@ -1,0 +1,17 @@
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.exe
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.deps.json
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.runtimeconfig.json
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.dll
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.pdb
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Form1.resources
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.dll
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\refint\CineFront.dll
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
