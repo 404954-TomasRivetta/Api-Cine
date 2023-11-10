@@ -246,6 +246,20 @@
             "rid": "win"
           }
         }
+      },
+      "CineBack/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "compile": {
+          "bin/placeholder/CineBack.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CineBack.dll": {}
+        }
       }
     }
   },
@@ -930,29 +944,35 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CineBack/1.0.0": {
+      "type": "project",
+      "path": "../CineBack/CineBack.csproj",
+      "msbuildProject": "../CineBack/CineBack.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CineBack >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "Swashbuckle.AspNetCore >= 6.5.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\CESAR\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+      "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
       "projectName": "CineApi",
-      "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\obj\\",
+      "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+      "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -965,7 +985,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1010,16 +1034,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
