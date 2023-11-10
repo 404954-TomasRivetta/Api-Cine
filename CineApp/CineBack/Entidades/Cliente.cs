@@ -8,35 +8,35 @@ namespace CineBack.Entidades
 {
     internal class Cliente
     {
-        public string nombre { get; set; }
-        public string apellido  { get; set; }
-        public string correo { get; set; }
-        public int nro_tel { get; set; }
-        public int cod_barrio { get; set; }
-        public string calle { get; set; }
-        public int calle_nro { get; set; }
+        public string Nombre { get; set; }
+        public string Apellido  { get; set; }
+        public string Correo { get; set; }
+        public int NroTel { get; set; }
+        public int CodBarrio { get; set; }
+        public string Calle { get; set; }
+        public int CalleNro { get; set; }
         public int Dni { get; set; }
         public Cliente()
         {
-            nombre = string.Empty;
-            apellido = string.Empty;
-            correo = string.Empty;
-            nro_tel = 0;
-            cod_barrio = 0;
-            calle = string.Empty;
-            calle_nro = 0;
+            Nombre = string.Empty;
+            Apellido = string.Empty;
+            Correo = string.Empty;
+            NroTel = 0;
+            CodBarrio = 0;
+            Calle = string.Empty;
+            CalleNro = 0;
             Dni = 0;
         }
         public Cliente(string nom,string ape,string cor,int tel,int cod,
             string cal,int cal_nro,int dni)
         {
-            nombre = nom;
-            apellido = ape;
-            correo = cor;
-            nro_tel=tel;
-            cod_barrio = cod;
-            calle = cal;
-            calle_nro = cal_nro;
+            Nombre = nom;
+            Apellido = ape;
+            Correo = cor;
+            NroTel =tel;
+            CodBarrio = cod;
+            Calle = cal;
+            CalleNro = cal_nro;
             Dni = dni;
         }
 

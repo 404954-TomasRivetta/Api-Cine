@@ -8,22 +8,22 @@ namespace CineBack.Entidades
 {
     internal class Comprobante
     {
-        public int id_cliente { get; set; }
-        public int id_forma_pago { get; set; }
-        public int id_empleado { get; set; }
-        public int cant_entradas { get; set; }
-        public List<Tickets> tickets { get; set; }
+        public int IdCliente { get; set; }
+        public int IdForma_pago { get; set; }
+        public int IdEmpleado { get; set; }
+        public int CantEntradas { get; set; }
+        public List<Tickets> lTickets { get; set; }
         public Comprobante()
         {
-            tickets = new List<Tickets>();
+            lTickets = new List<Tickets>();
         }
         public void AgregarTicket(Tickets ticket)
         {
-            tickets.Add(ticket);
+            lTickets.Add(ticket);
         }
         public void QuitarTicket(int posicion)
         {
-            tickets.RemoveAt(posicion);
+            lTickets.RemoveAt(posicion);
         }
     }
 }

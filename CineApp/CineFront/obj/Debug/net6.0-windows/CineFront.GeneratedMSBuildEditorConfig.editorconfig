@@ -14,8 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CineFront
-<<<<<<< HEAD
 build_property.ProjectDir = D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\
-=======
-build_property.ProjectDir = C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135

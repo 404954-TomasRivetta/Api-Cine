@@ -8,29 +8,29 @@ namespace CineBack.Entidades
 {
     internal class Pelicula
     {
-        public string descripcion { get; set; }
-        public int id_tipo_pelicula { get; set; }
-        public int id_idioma { get; set; }
-        public int id_tipo_publico { get; set; }
-        public Boolean subtitulada { get; set; }
-        public int id_director { get; set; }
+        public string Descripcion { get; set; }
+        public int IdTipoPelicula { get; set; }
+        public int IdIdioma { get; set; }
+        public int IdTipoPublico { get; set; }
+        public bool Subtitulada { get; set; }
+        public int IdDirector { get; set; }
         public Pelicula()
         {
-            descripcion = string.Empty;
-            id_tipo_pelicula = 0;
-            id_idioma = 0;
-            id_tipo_publico = 0;
-            subtitulada = false;
-            id_director = 0;
+            Descripcion = string.Empty;
+            IdTipoPelicula = 0;
+            IdIdioma = 0;
+            IdTipoPelicula = 0;
+            Subtitulada = false;
+            IdDirector = 0;
         }
-        public Pelicula(string des,int tipo_pel,int idioma,int tipo_pub,Boolean sub,int dir)
+        public Pelicula(string des,int tipo_pel,int idioma,int tipo_pub,bool sub,int dir)
         {
-            descripcion=des;
-            id_tipo_pelicula=tipo_pel;
-            id_idioma=idioma;
-            id_tipo_publico=tipo_pub;
-            subtitulada=sub;
-            id_director=dir;
+            Descripcion =des;
+            IdTipoPelicula =tipo_pel;
+            IdIdioma =idioma;
+            IdTipoPelicula =tipo_pub;
+            Subtitulada =sub;
+            IdDirector =dir;
         }
     }
 }

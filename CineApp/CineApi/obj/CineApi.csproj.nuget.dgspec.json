@@ -1,28 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
-=======
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
   },
   "projects": {
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
         "projectName": "CineApi",
-        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineApi\\obj\\",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,11 +72,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
         }
       }
     }

@@ -1,28 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
-=======
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
   },
   "projects": {
-    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,8 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-<<<<<<< HEAD
-=======
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -59,7 +49,6 @@
               "version": "[4.8.5, )"
             }
           },
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
           "imports": [
             "net461",
             "net462",
@@ -76,11 +65,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 6b5bd1e3c7b40dcce2d0771812242e0abfef5135
         }
       }
     }
