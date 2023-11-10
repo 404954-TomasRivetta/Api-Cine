@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\hola 2\\Api-Cine\\CineApp\\CineFront\\obj\\",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -39,13 +39,24 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -57,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
