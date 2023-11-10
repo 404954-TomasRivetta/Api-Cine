@@ -1,37 +1,24 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+    "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
   },
   "projects": {
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\obj\\",
+        "projectPath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "projectName": "CineFront",
-        "projectPath": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,11 +62,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
