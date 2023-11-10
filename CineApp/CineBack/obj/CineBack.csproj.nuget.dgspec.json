@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
