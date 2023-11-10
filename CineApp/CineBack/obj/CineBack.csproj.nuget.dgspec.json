@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectName": "CineBack",
+        "projectPath": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +56,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +78,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+>>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
         }
       }
     }

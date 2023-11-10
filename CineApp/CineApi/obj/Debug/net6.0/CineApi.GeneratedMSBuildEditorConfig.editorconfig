@@ -9,9 +9,17 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CineApi
 build_property.RootNamespace = CineApi
+<<<<<<< HEAD
 build_property.ProjectDir = D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi
+=======
+build_property.ProjectDir = C:\Users\Pc\Desktop\Proyecto prog\Api-Cine\CineApp\CineApi\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Pc\Desktop\Proyecto prog\Api-Cine\CineApp\CineApi
+>>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
 build_property._RazorSourceGeneratorDebug = 

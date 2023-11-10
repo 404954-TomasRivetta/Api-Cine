@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ZPO7ApXcCVjH3RRcVCmxUdw0RQd/NCG1rg8VmWjq7F2OZvvcqq4r4z9z6WYic6KDKym/qnc8P7noAJFp4L+z5w==",
   "success": true,
   "projectFilePath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+=======
+  "dgSpecHash": "mSK8aQFJsChgbVhRel3DGtmhjai6AvDy+on5+r9ft68yAIE1k7ZDwjWl6kcU4D8C3FEKV0/YRqGMDiqoZ6YToA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Pc\\Desktop\\Proyecto prog\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+>>>>>>> 399d8e3a3a762cc1eb9cbeec1d726606746f777b
   "expectedPackageFiles": [],
   "logs": []
 }
