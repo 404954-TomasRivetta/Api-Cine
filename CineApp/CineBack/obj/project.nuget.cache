@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zrwoz3r2s19ZWQHdnlhiU5qjBzvW7Cw27+ZVMIhw2cu/e3cUTLhm8LjNoGo3LteamFhyDT0jkUA2oYRtHGYR8A==",
+  "dgSpecHash": "MdcSgWr3U801axBuKdCmVHl+sGwUrv0HzEBrM7qtr3h1zxvCX0kY362qOO+p/zft/QF31NhNXevo3GfQxbSFTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\hola\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\Api-Cine\\CineApp\\CineBack\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
