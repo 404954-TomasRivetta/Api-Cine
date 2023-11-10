@@ -437,19 +437,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CESAR\\.nuget\\packages\\": {}
+    "C:\\Users\\Sarie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+      "projectUniqueName": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
       "projectName": "CineApi",
-      "projectPath": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-      "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineApi\\obj\\",
+      "projectPath": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+      "packagesPath": "C:\\Users\\Sarie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sarie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -499,7 +499,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

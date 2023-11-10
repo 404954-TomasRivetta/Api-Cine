@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CESAR\\.nuget\\packages\\": {}
+    "C:\\Users\\Sarie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "projectUniqueName": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
       "projectName": "CineFront",
-      "projectPath": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-      "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CESAR\\Desktop\\toto\\repositoriosProg\\Api-Cine\\CineApp\\CineFront\\obj\\",
+      "projectPath": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "packagesPath": "C:\\Users\\Sarie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sarie\\Desktop\\FInal\\Api-Cine\\CineApp\\CineFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sarie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
