@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineBack.Entidades
 {
-    internal class Pelicula
+    public class Pelicula
     {
         public string Descripcion { get; set; }
         public int IdTipoPelicula { get; set; }

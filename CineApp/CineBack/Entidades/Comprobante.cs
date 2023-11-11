@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CineBack.Entidades
 {
-    internal class Comprobante
+    public class Comprobante
     {
         public int IdCliente { get; set; }
         public int IdForma_pago { get; set; }

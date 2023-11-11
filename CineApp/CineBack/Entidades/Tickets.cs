@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CineBack.Entidades
 {
-    internal class Tickets
+    public class Tickets
     {
         public int IdComprobante { get; set; }
         public int IdButaca { get; set; }
