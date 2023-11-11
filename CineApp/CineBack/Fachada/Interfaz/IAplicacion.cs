@@ -10,8 +10,14 @@ namespace CineBack.Fachada.Interfaz
     public interface IAplicacion
     {
         #region MetodosCliente
-        List<Barrio> GetBarrios();
+        List<Barrio> GetBarrios(int CodBarrio);
+
         bool SaveCliente(Cliente oCliente);
+
+        bool ModifyCliente(Cliente oCliente);
+
+        bool DeleteCliente(Cliente oCliente);
+
         #endregion
 
         #region MetodosPelicula
