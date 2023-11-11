@@ -8,6 +8,7 @@ namespace CineBack.Entidades
 {
     public class Cliente
     {
+        public int CodCliente { get; set; }
         public string Nombre { get; set; }
         public string Apellido  { get; set; }
         public string Correo { get; set; }
@@ -18,6 +19,7 @@ namespace CineBack.Entidades
         public int Dni { get; set; }
         public Cliente()
         {
+            CodCliente = 0;
             Nombre = string.Empty;
             Apellido = string.Empty;
             Correo = string.Empty;
@@ -27,9 +29,10 @@ namespace CineBack.Entidades
             CalleNro = 0;
             Dni = 0;
         }
-        public Cliente(string nom,string ape,string cor,int tel,int cod,
+        public Cliente(int codCliente,string nom,string ape,string cor,int tel,int cod,
             string cal,int cal_nro,int dni)
         {
+            CodCliente=codCliente;
             Nombre = nom;
             Apellido = ape;
             Correo = cor;

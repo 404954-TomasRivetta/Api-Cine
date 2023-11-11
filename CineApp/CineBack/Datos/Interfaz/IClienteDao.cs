@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CineBack.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,8 @@ namespace CineBack.Datos.Interfaz
 {
     public interface IClienteDao
     {
+        bool Modificar(Cliente cliente);
+        bool Borrar(Cliente cliente);
+        bool Crear(Cliente cliente);
     }
 }
