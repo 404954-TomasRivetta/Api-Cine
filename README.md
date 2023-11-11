@@ -12,7 +12,7 @@ Desarrollo de una aplicacion para un Cine, tal aplicacion nos permite gestionar 
 ## Autores
 
 - [@Santiago Artaza](https://github.com/114384-Santiago-Artaza)
-- [@Valentin Bertello](https://github.com/valentino113991)
+- [@Valentino Bertello](https://github.com/valentino113991)
 - [@Alexis Cantonati](https://github.com/405634-1w2-Alexis-Cantonati)
 - [@Rodrigo Moran](https://github.com/RodriMoran406158)
 - [@Nicolas Perlo](https://github.com/NicolasPerloUtn)
