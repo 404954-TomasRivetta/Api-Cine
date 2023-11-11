@@ -20,15 +20,26 @@ namespace CineBack.Fachada.Implementacion
         }
 
         #region MetodosCliente
-        public List<Barrio> GetBarrios()
+        public List<Barrio> GetBarrios(int CodBarrio)
         {
-            throw new NotImplementedException();
+            return dao.TraerBarrios(CodBarrio);
         }
 
         public bool SaveCliente(Cliente oCliente)
         {
-            throw new NotImplementedException();
+            return dao.Crear(oCliente);
         }
+
+        public bool ModifyCliente(Cliente oCliente)
+        {
+            return dao.Modificar(oCliente);
+        }
+
+        public bool DeleteCliente(Cliente oCliente)
+        {
+            return dao.Borrar(oCliente);
+        }
+
         #endregion
 
         #region MetodosPelicula
