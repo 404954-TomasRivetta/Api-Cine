@@ -16,19 +16,18 @@ namespace CineBack.Fachada.Implementacion
 
         public Aplicacion()
         {
-            dao = new IClienteDao();
+            dao = new ClienteDao();
         }
-
 
         #region MetodosCliente
         public List<Barrio> GetBarrios()
         {
-            return dao.ObtenerBarrios();
+            throw new NotImplementedException();
         }
 
-        public bool saveCliente(Cliente oCliente)
+        public bool SaveCliente(Cliente oCliente)
         {
-            return dao.Crear(oCliente);
+            throw new NotImplementedException();
         }
         #endregion
 
@@ -58,7 +57,7 @@ namespace CineBack.Fachada.Implementacion
             throw new NotImplementedException();
         }
 
-        public bool savePelicula(Pelicula oPelicula)
+        public bool SavePelicula(Pelicula oPelicula)
         {
             throw new NotImplementedException();
         }
@@ -75,15 +74,15 @@ namespace CineBack.Fachada.Implementacion
             throw new NotImplementedException();
         }
 
-        //public List<Empleado> GetEmpleados()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public List<Empleado> GetEmpleados()
+        {
+            throw new NotImplementedException();
+        }
 
-        //public List<FormaPago> GetFormasPagos()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public List<TipoFormaPago> GetFormasPagos()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

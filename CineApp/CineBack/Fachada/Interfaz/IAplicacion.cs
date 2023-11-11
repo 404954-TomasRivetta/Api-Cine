@@ -30,8 +30,8 @@ namespace CineBack.Fachada.Interfaz
 
         #region MetodosComprobante
         List<Cliente> GetClientes();
-        //List<Empleado> GetEmpleados();
-        //List<FormaPago> GetFormasPagos();
+        List<Empleado> GetEmpleados();
+        List<TipoFormaPago> GetFormasPagos();
         bool SaveComprobante(Comprobante oComprobante);
         #endregion
     }
