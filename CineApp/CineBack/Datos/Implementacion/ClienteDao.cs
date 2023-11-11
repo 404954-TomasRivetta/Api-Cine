@@ -12,6 +12,19 @@ namespace CineBack.Datos.Implementacion
 {
     public class ClienteDao : IClienteDao
     {
+        public List<Barrio> TraerBarrios(int codBarrio)
+        {
+            List<Barrio> lBarrios = new List<Barrio>();
+            DataTable tabla=HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_BARRIOS");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int cod = int.Parse(fila["cod_barrio"].ToString());
+                string desc = fila["descripcion"].ToString();
+                Barrio b = new Barrio(cod, desc);
+                lBarrios.Add(b);
+            }
+            return lBarrios;
+        }
         public bool Modificar(Cliente cliente)
         {
             bool resultado = true;
@@ -134,6 +147,6 @@ namespace CineBack.Datos.Implementacion
             return resultado;
         }
 
-
+       
     }
 }
