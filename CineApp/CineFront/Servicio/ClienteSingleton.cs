@@ -39,7 +39,7 @@ namespace CineFront.Servicio
             {
                 content = await result.Content.ReadAsStringAsync();
             }
-            //ME DEVUELVE UN JSON
+            
             return content;
 
         }

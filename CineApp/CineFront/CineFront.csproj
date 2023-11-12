@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Presentacion\Formularios\" />
     <Folder Include="Presentacion\Reportes\" />
   </ItemGroup>
 

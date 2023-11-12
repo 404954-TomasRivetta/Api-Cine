@@ -16,5 +16,6 @@ namespace CineFront.Presentacion.Formularios
         {
             InitializeComponent();
         }
+
     }
 }

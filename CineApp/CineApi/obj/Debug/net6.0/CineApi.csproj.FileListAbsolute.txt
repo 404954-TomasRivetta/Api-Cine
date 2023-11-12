@@ -25,3 +25,44 @@ C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\refint
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.pdb
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\ref\CineApi.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\appsettings.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.exe
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.deps.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.runtimeconfig.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineBack.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineBack.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.AssemblyReference.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.AssemblyInfoInputs.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.AssemblyInfo.cs
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.CoreCompileInputs.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.CineApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.build.CineApi.props
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CineApi.props
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CineApi.props
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\scopedcss\bundle\CineApi.styles.css
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.CopyComplete
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\refint\CineApi.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.genruntimeconfig.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\ref\CineApi.dll

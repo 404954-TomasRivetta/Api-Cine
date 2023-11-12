@@ -15,3 +15,31 @@ C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-wind
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.AssemblyReference.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAcercaDe.resources
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmConsultarPeliculas.resources
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.GenerateResource.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfoInputs.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfo.cs
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.CoreCompileInputs.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\refint\CineFront.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.exe
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.deps.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.runtimeconfig.json
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineBack.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineBack.pdb
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.CopyComplete
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll

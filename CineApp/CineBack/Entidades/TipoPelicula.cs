@@ -8,6 +8,8 @@ namespace CineBack.Entidades
 {
     public class TipoPelicula
     {
+        public int IdTipoPelicula { get; set; }
+
         public string Descripcion { get; set; }
         public override string ToString()
         {
