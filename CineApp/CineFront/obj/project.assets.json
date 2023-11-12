@@ -139,6 +139,20 @@
             "rid": "win"
           }
         }
+      },
+      "CineBack/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3",
+          "System.Data.SqlClient": "4.8.5"
+        },
+        "compile": {
+          "bin/placeholder/CineBack.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CineBack.dll": {}
+        }
       }
     }
   },
@@ -485,10 +499,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CineBack/1.0.0": {
+      "type": "project",
+      "path": "../CineBack/CineBack.csproj",
+      "msbuildProject": "../CineBack/CineBack.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "CineBack >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -519,7 +539,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
