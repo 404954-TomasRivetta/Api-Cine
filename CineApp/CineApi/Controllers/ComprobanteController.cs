@@ -10,10 +10,10 @@ namespace CineApi.Controllers
     [ApiController]
     public class ComprobanteController : ControllerBase
     {
-        private IAplicacion app;
+        private IAplicacionComprobante app;
         public ComprobanteController()
         {
-            app = new Aplicacion();
+            app = new AplicacionComprobante();
         }
 
         [HttpGet("/clientes")]
@@ -80,7 +80,7 @@ namespace CineApi.Controllers
                 }
                 else
                 {
-                    return NotFound("No se pudo guardar el cliente!!!");
+                    return NotFound("No se pudo guardar el comprobante!!!");
                 }
 
 

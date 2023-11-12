@@ -12,7 +12,7 @@ namespace CineBack.Datos.Implementacion
 {
     public class ClienteDao : IClienteDao
     {
-        public List<Barrio> TraerBarrios(int codBarrio)
+        public List<Barrio> TraerBarrios()
         {
             List<Barrio> lBarrios = new List<Barrio>();
             DataTable tabla=HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_BARRIOS");

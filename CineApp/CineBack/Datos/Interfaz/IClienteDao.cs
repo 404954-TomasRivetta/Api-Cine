@@ -12,6 +12,6 @@ namespace CineBack.Datos.Interfaz
         bool Modificar(Cliente cliente);
         bool Borrar(Cliente cliente);
         bool Crear(Cliente cliente);
-        List<Barrio> TraerBarrios(int codBarrio);
+        List<Barrio> TraerBarrios();
     }
 }

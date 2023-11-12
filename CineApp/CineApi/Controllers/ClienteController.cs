@@ -12,11 +12,10 @@ namespace CineApi.Controllers
     [ApiController]
     public class ClienteController : ControllerBase
     {
-        private IAplicacion app;
-
+        private IAplicacionCliente app;
         public ClienteController()
         {
-            app = new Aplicacion();
+            app = new AplicacionCliente();
         }
 
         // GET: api/<ClienteController>
