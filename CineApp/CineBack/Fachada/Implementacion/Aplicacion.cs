@@ -13,10 +13,12 @@ namespace CineBack.Fachada.Implementacion
     public class Aplicacion : IAplicacion
     {
         private IClienteDao dao;
+        IComprobanteDao daoComprobante;
 
         public Aplicacion()
         {
             dao = new ClienteDao();
+            daoComprobante = new ComprobanteDao();
         }
 
         #region MetodosCliente
@@ -77,22 +79,22 @@ namespace CineBack.Fachada.Implementacion
         #region MetodosComprobante
         public bool SaveComprobante(Comprobante oComprobante)
         {
-            throw new NotImplementedException();
+            return daoComprobante.Crear(oComprobante);
         }
 
         public List<Cliente> GetClientes()
         {
-            throw new NotImplementedException();
+            return daoComprobante.GetClientes();
         }
 
         public List<Empleado> GetEmpleados()
         {
-            throw new NotImplementedException();
+            return daoComprobante.GetEmpleados();
         }
 
         public List<TipoFormaPago> GetFormasPagos()
         {
-            throw new NotImplementedException();
+            return daoComprobante.GetFormasPagos();
         }
         #endregion
     }
