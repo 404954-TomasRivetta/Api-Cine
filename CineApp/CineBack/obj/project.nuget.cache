@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hzCdQZxqr1IHmHhlypVmnAkhg/i+ilDVAFRWX5LugfgEN09kAZliNgiGgAjLAbnOZe+1iSSz/9FxsHgaCCS/uw==",
+  "dgSpecHash": "lns9nw43toDuKyiNEjPvl5lgMkD0eyeq3nd1QDZLyis44tQpYDFYzYGCHp1vvAefmGB10QZTPjP46AvD6X9u9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+  "projectFilePath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

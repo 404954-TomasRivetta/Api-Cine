@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O6N+8uJ8+QcJmT+TvKKji4ZaGgG5L/o6OFhxNUMbfdcLNxSd9DbJmCYgVMQ7l6Gno7Z6NEy6pYmsvEiQ0MtRCA==",
+  "dgSpecHash": "WHa7PX9bUih8tDzeaLIpC4S6bTgX4tFwQF41sXgtl88rrnPTyrbZrEu5UWyQ51foWI+B7qS6sS1fCtV5edMFLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+  "projectFilePath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

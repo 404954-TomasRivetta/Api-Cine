@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
         "projectName": "CineApi",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineApi\\obj\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+              "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+                "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
               }
             }
           }
@@ -63,7 +63,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -75,18 +76,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\a 2\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,7 +131,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -139,7 +141,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
