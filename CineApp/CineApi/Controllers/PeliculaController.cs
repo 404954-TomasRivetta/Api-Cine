@@ -1,4 +1,5 @@
-﻿using CineBack.Fachada.Implementacion;
+﻿using CineBack.Entidades;
+using CineBack.Fachada.Implementacion;
 using CineBack.Fachada.Interfaz;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
