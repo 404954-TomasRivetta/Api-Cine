@@ -19,24 +19,10 @@ namespace CineFront.Presentacion.Formularios
         {
             InitializeComponent();
         }
-
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Cliente c = new Cliente();
-            c.Nombre = txtNombre.Text;
-            c.Apellido = txtApellido.Text;
-            c.Correo = txtCorreo.Text;
-            c.CodBarrio = (int)cboBarrios.SelectedValue;            
-            c.NroTel = Convert.ToInt32(txtNroTel.Text);
-            c.Calle = txtCalle.Text;
-            c.CalleNro = Convert.ToInt32(txtAltura.Text);
-            c.Dni = Convert.ToInt32(txtDni.Text);
-            dgvClientes.Rows.Add(new object[] { c.Nombre, c.Apellido, c.NroTel, c.Correo,c.CodBarrio,cboBarrios.Text,c.Calle, c.CalleNro, c.Dni, "Quitar" });
-        }
-
         private async void FrmAltaCliente_Load(object sender, EventArgs e)
         {
             await CargarBarriosAsync();
+            cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         private async Task CargarBarriosAsync()
         {
@@ -50,27 +36,21 @@ namespace CineFront.Presentacion.Formularios
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (dgvClientes.Rows.Count == 0)
-            {
-                MessageBox.Show("Debe ingresar al menos un cliente...", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
+            
             GrabarCliente();
         }
         private async void GrabarCliente()
-        {
-            foreach (DataGridViewRow row in dgvClientes.Rows)
-            {
+        {            
                 Cliente c = new Cliente();
-                c.Nombre = row.Cells["ColNombre"].Value.ToString();
-                c.Apellido = row.Cells["ColApellido"].Value.ToString();
-                c.NroTel = Convert.ToInt32(row.Cells["ColTelefono"].Value);
-                c.Correo = row.Cells["ColCorreo"].Value.ToString().ToString();
-                c.CodBarrio = (int)row.Cells["ColCodBarrio"].Value;
-                c.Calle = row.Cells["ColCalle"].Value.ToString();
-                c.CalleNro = (int)row.Cells["ColAltura"].Value;
-                c.Dni = (int)row.Cells["ColDni"].Value;
-                if(await GuardarClienteAsync(c))
+                c.Nombre = txtNombre.Text;
+                c.Apellido = txtApellido.Text;
+                c.NroTel = Convert.ToInt32(txtNroTel.Text);
+                c.Correo = txtCorreo.Text;
+                c.CodBarrio = Convert.ToInt32(cboBarrios.SelectedValue);
+                c.Calle = txtCalle.Text;
+                c.CalleNro = Convert.ToInt32(txtAltura.Text);
+                c.Dni = Convert.ToInt32(txtDni.Text);
+                if (await GuardarClienteAsync(c))
                 {
                     MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     this.Dispose();
@@ -78,8 +58,7 @@ namespace CineFront.Presentacion.Formularios
                 else
                 {
                     MessageBox.Show("NO se pudo registrar el cliente...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
-            }
+                }            
         }
         private async Task<bool> GuardarClienteAsync(Cliente nuevo)
         {

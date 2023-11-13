@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dgvClientes = new DataGridView();
-            btnAgregar = new Button();
             btnCancelar = new Button();
             btnAceptar = new Button();
             txtCorreo = new TextBox();
@@ -49,45 +47,11 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            ColNombre = new DataGridViewTextBoxColumn();
-            ColApellido = new DataGridViewTextBoxColumn();
-            ColTelefono = new DataGridViewTextBoxColumn();
-            ColCorreo = new DataGridViewTextBoxColumn();
-            ColCodBarrio = new DataGridViewTextBoxColumn();
-            ColBarrio = new DataGridViewTextBoxColumn();
-            ColCalle = new DataGridViewTextBoxColumn();
-            ColAltura = new DataGridViewTextBoxColumn();
-            ColDni = new DataGridViewTextBoxColumn();
-            ColAcciones = new DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).BeginInit();
             SuspendLayout();
-            // 
-            // dgvClientes
-            // 
-            dgvClientes.AllowUserToAddRows = false;
-            dgvClientes.AllowUserToDeleteRows = false;
-            dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Columns.AddRange(new DataGridViewColumn[] { ColNombre, ColApellido, ColTelefono, ColCorreo, ColCodBarrio, ColBarrio, ColCalle, ColAltura, ColDni, ColAcciones });
-            dgvClientes.Location = new Point(7, 380);
-            dgvClientes.Name = "dgvClientes";
-            dgvClientes.ReadOnly = true;
-            dgvClientes.RowTemplate.Height = 25;
-            dgvClientes.Size = new Size(499, 163);
-            dgvClientes.TabIndex = 41;
-            // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new Point(364, 351);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
-            btnAgregar.TabIndex = 40;
-            btnAgregar.Text = "Agregar";
-            btnAgregar.UseVisualStyleBackColor = true;
-            btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(262, 549);
+            btnCancelar.Location = new Point(252, 408);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(99, 23);
             btnCancelar.TabIndex = 39;
@@ -96,7 +60,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(121, 549);
+            btnAceptar.Location = new Point(80, 408);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(99, 23);
             btnAceptar.TabIndex = 38;
@@ -106,7 +70,7 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(154, 179);
+            txtCorreo.Location = new Point(112, 178);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(100, 23);
             txtCorreo.TabIndex = 37;
@@ -114,7 +78,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(112, 352);
+            label9.Location = new Point(70, 351);
             label9.Name = "label9";
             label9.Size = new Size(27, 15);
             label9.TabIndex = 36;
@@ -124,7 +88,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(97, 309);
+            label8.Location = new Point(55, 308);
             label8.Name = "label8";
             label8.Size = new Size(42, 17);
             label8.TabIndex = 35;
@@ -134,7 +98,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(91, 180);
+            label7.Location = new Point(49, 179);
             label7.Name = "label7";
             label7.Size = new Size(49, 17);
             label7.TabIndex = 34;
@@ -143,49 +107,49 @@
             // cboBarrios
             // 
             cboBarrios.FormattingEnabled = true;
-            cboBarrios.Location = new Point(154, 222);
+            cboBarrios.Location = new Point(112, 221);
             cboBarrios.Name = "cboBarrios";
             cboBarrios.Size = new Size(285, 23);
             cboBarrios.TabIndex = 33;
             // 
             // txtNroTel
             // 
-            txtNroTel.Location = new Point(154, 138);
+            txtNroTel.Location = new Point(112, 137);
             txtNroTel.Name = "txtNroTel";
             txtNroTel.Size = new Size(112, 23);
             txtNroTel.TabIndex = 32;
             // 
             // txtAltura
             // 
-            txtAltura.Location = new Point(154, 308);
+            txtAltura.Location = new Point(112, 307);
             txtAltura.Name = "txtAltura";
             txtAltura.Size = new Size(93, 23);
             txtAltura.TabIndex = 31;
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(154, 349);
+            txtDni.Location = new Point(112, 348);
             txtDni.Name = "txtDni";
             txtDni.Size = new Size(123, 23);
             txtDni.TabIndex = 30;
             // 
             // txtCalle
             // 
-            txtCalle.Location = new Point(154, 264);
+            txtCalle.Location = new Point(112, 263);
             txtCalle.Name = "txtCalle";
             txtCalle.Size = new Size(285, 23);
             txtCalle.TabIndex = 29;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(154, 98);
+            txtApellido.Location = new Point(112, 97);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(207, 23);
             txtApellido.TabIndex = 28;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(154, 58);
+            txtNombre.Location = new Point(112, 57);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(207, 23);
             txtNombre.TabIndex = 27;
@@ -194,7 +158,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(103, 265);
+            label6.Location = new Point(61, 264);
             label6.Name = "label6";
             label6.Size = new Size(36, 17);
             label6.TabIndex = 26;
@@ -204,7 +168,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(81, 144);
+            label5.Location = new Point(39, 143);
             label5.Name = "label5";
             label5.Size = new Size(58, 17);
             label5.TabIndex = 25;
@@ -214,7 +178,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(96, 223);
+            label4.Location = new Point(54, 222);
             label4.Name = "label4";
             label4.Size = new Size(43, 17);
             label4.TabIndex = 24;
@@ -224,7 +188,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(82, 59);
+            label3.Location = new Point(40, 58);
             label3.Name = "label3";
             label3.Size = new Size(57, 17);
             label3.TabIndex = 23;
@@ -234,7 +198,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(83, 99);
+            label2.Location = new Point(41, 98);
             label2.Name = "label2";
             label2.Size = new Size(56, 17);
             label2.TabIndex = 22;
@@ -250,75 +214,11 @@
             label1.TabIndex = 21;
             label1.Text = "NUEVO CLIENTE";
             // 
-            // ColNombre
-            // 
-            ColNombre.HeaderText = "Nombre";
-            ColNombre.Name = "ColNombre";
-            ColNombre.ReadOnly = true;
-            // 
-            // ColApellido
-            // 
-            ColApellido.HeaderText = "Apellido";
-            ColApellido.Name = "ColApellido";
-            ColApellido.ReadOnly = true;
-            // 
-            // ColTelefono
-            // 
-            ColTelefono.HeaderText = "Telefono";
-            ColTelefono.Name = "ColTelefono";
-            ColTelefono.ReadOnly = true;
-            // 
-            // ColCorreo
-            // 
-            ColCorreo.HeaderText = "Correo";
-            ColCorreo.Name = "ColCorreo";
-            ColCorreo.ReadOnly = true;
-            // 
-            // ColCodBarrio
-            // 
-            ColCodBarrio.HeaderText = "Cod. Barrio";
-            ColCodBarrio.Name = "ColCodBarrio";
-            ColCodBarrio.ReadOnly = true;
-            ColCodBarrio.Visible = false;
-            // 
-            // ColBarrio
-            // 
-            ColBarrio.HeaderText = "Barrio";
-            ColBarrio.Name = "ColBarrio";
-            ColBarrio.ReadOnly = true;
-            // 
-            // ColCalle
-            // 
-            ColCalle.HeaderText = "Calle";
-            ColCalle.Name = "ColCalle";
-            ColCalle.ReadOnly = true;
-            // 
-            // ColAltura
-            // 
-            ColAltura.HeaderText = "Altura";
-            ColAltura.Name = "ColAltura";
-            ColAltura.ReadOnly = true;
-            // 
-            // ColDni
-            // 
-            ColDni.HeaderText = "Dni";
-            ColDni.Name = "ColDni";
-            ColDni.ReadOnly = true;
-            // 
-            // ColAcciones
-            // 
-            ColAcciones.HeaderText = "Quitar";
-            ColAcciones.Name = "ColAcciones";
-            ColAcciones.ReadOnly = true;
-            ColAcciones.Visible = false;
-            // 
             // FrmAltaCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(518, 621);
-            Controls.Add(dgvClientes);
-            Controls.Add(btnAgregar);
+            ClientSize = new Size(418, 442);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(txtCorreo);
@@ -341,15 +241,11 @@
             Name = "FrmAltaCliente";
             Text = "FrmAltaCliente2";
             Load += FrmAltaCliente_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private DataGridView dgvClientes;
-        private Button btnAgregar;
         private Button btnCancelar;
         private Button btnAceptar;
         private TextBox txtCorreo;
@@ -369,15 +265,5 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private DataGridViewTextBoxColumn ColNombre;
-        private DataGridViewTextBoxColumn ColApellido;
-        private DataGridViewTextBoxColumn ColTelefono;
-        private DataGridViewTextBoxColumn ColCorreo;
-        private DataGridViewTextBoxColumn ColCodBarrio;
-        private DataGridViewTextBoxColumn ColBarrio;
-        private DataGridViewTextBoxColumn ColCalle;
-        private DataGridViewTextBoxColumn ColAltura;
-        private DataGridViewTextBoxColumn ColDni;
-        private DataGridViewButtonColumn ColAcciones;
     }
 }
