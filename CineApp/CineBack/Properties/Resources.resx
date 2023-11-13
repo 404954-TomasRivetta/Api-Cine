@@ -120,4 +120,8 @@
   <data name="CadenaConexion" xml:space="preserve">
     <value>Data Source=DESKTOP-S1JD39O\SQLEXPRESS;Initial Catalog=lc_tpi_cine;Integrated Security=True</value>
   </data>
+  <data name="CadenaConexion404954" xml:space="preserve">
+    <value>Data Source=PCCESAR;Initial Catalog=lc_tpi_cine;Integrated Security=True</value>
+    <comment>cadena de conexion de la casa de tomas</comment>
+  </data>
 </root>

@@ -72,3 +72,4 @@ D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineBack.p
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.CopyComplete
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaCliente.resources

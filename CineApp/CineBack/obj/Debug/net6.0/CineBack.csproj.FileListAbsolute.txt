@@ -27,5 +27,10 @@ D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\bin\Debug\net6.0\CineBack.deps.json
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\bin\Debug\net6.0\CineBack.dll
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\bin\Debug\net6.0\CineBack.pdb
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\ref\CineBack.dll
+<<<<<<< HEAD
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.Properties.Resources.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.csproj.GenerateResource.cache
+=======
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.Properties.Resources.resources
+C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.csproj.GenerateResource.cache
+>>>>>>> 58eb14193dc1520410877921fc40531ea1f4d291
