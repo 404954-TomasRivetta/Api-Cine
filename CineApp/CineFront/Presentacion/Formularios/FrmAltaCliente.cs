@@ -26,22 +26,21 @@ namespace CineFront.Presentacion.Formularios
             c.Nombre = txtNombre.Text;
             c.Apellido = txtApellido.Text;
             c.Correo = txtCorreo.Text;
-            c.NombreBarrio = cboBarrios.Text;
-            c.CodBarrio = (int)cboBarrios.SelectedValue;
+            c.CodBarrio = (int)cboBarrios.SelectedValue;            
             c.NroTel = Convert.ToInt32(txtNroTel.Text);
             c.Calle = txtCalle.Text;
             c.CalleNro = Convert.ToInt32(txtAltura.Text);
             c.Dni = Convert.ToInt32(txtDni.Text);
-            dgvClientes.Rows.Add(new object[] { c.Nombre, c.Apellido, c.NroTel, c.Correo, c.NombreBarrio, c.Calle, c.CalleNro, c.Dni, "Quitar" });
+            dgvClientes.Rows.Add(new object[] { c.Nombre, c.Apellido, c.NroTel, c.Correo,c.CodBarrio,cboBarrios.Text,c.Calle, c.CalleNro, c.Dni, "Quitar" });
         }
 
-        private void FrmAltaCliente_Load(object sender, EventArgs e)
+        private async void FrmAltaCliente_Load(object sender, EventArgs e)
         {
-
+            await CargarBarriosAsync();
         }
         private async Task CargarBarriosAsync()
         {
-            string url = "https://localhost:7141/barrios";
+            string url = "http://localhost:5175/barrios";
             var dataJson = await ClienteSingleton.GetInstance().GetAsync(url);
             List<Barrio> lBarrios = JsonConvert.DeserializeObject<List<Barrio>>(dataJson);
             cboBarrios.DataSource = lBarrios;
@@ -63,14 +62,14 @@ namespace CineFront.Presentacion.Formularios
             foreach (DataGridViewRow row in dgvClientes.Rows)
             {
                 Cliente c = new Cliente();
-                c.Nombre = row.Cells[0].Value.ToString();
-                c.Apellido = row.Cells[1].Value.ToString();
-                c.NroTel = Convert.ToInt32(row.Cells[2].Value);
-                c.Correo = row.Cells[3].Value.ToString().ToString();
+                c.Nombre = row.Cells["ColNombre"].Value.ToString();
+                c.Apellido = row.Cells["ColApellido"].Value.ToString();
+                c.NroTel = Convert.ToInt32(row.Cells["ColTelefono"].Value);
+                c.Correo = row.Cells["ColCorreo"].Value.ToString().ToString();
                 c.CodBarrio = (int)row.Cells["ColCodBarrio"].Value;
-                c.Calle = row.Cells[5].Value.ToString();
-                c.CalleNro = (int)row.Cells[6].Value;
-                c.Dni = (int)row.Cells[7].Value;
+                c.Calle = row.Cells["ColCalle"].Value.ToString();
+                c.CalleNro = (int)row.Cells["ColAltura"].Value;
+                c.Dni = (int)row.Cells["ColDni"].Value;
                 if(await GuardarClienteAsync(c))
                 {
                     MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -84,9 +83,9 @@ namespace CineFront.Presentacion.Formularios
         }
         private async Task<bool> GuardarClienteAsync(Cliente nuevo)
         {
-            string url = "https://localhost:7141/clientes";
+            string url = "https://localhost:7149/clientes";
             string clienteJson = JsonConvert.SerializeObject(nuevo);
-            var dataJson = await ClienteSingleton.GetInstance().PostAsyn(url, clienteJson);
+            var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, clienteJson);
             if (dataJson.Equals(""))
             {
                 return true;

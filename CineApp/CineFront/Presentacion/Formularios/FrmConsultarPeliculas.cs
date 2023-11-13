@@ -30,7 +30,7 @@ namespace CineFront.Presentacion.Formularios
         private async void CargarIdiomasAsync()
         {
             string url = "http://localhost:7149/idiomas";
-            var result = await ClienteSingleton.getInstance().GetAsync(url);
+            var result = await ClienteSingleton.GetInstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Dialecto>>(result);
             cboPublico.DataSource = lst;
             cboPublico.DisplayMember = "Descripcion";
@@ -40,7 +40,7 @@ namespace CineFront.Presentacion.Formularios
         private async void CargarPublicosAsync()
         {
             string url = "http://localhost:7149/publico";
-            var result = await ClienteSingleton.getInstance().GetAsync(url);
+            var result = await ClienteSingleton.GetInstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Dialecto>>(result);
             cboPublico.DataSource = lst;
             cboPublico.DisplayMember = "Descripcion";
@@ -50,7 +50,7 @@ namespace CineFront.Presentacion.Formularios
         private async void CargarGenerosAsync()
         {
             string url = "http://localhost:7149/generos";
-            var result = await ClienteSingleton.getInstance().GetAsync(url);
+            var result = await ClienteSingleton.GetInstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Dialecto>>(result);
             cboGenero.DataSource = lst;
             cboGenero.DisplayMember = "Descripcion";

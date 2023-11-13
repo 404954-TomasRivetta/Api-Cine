@@ -58,7 +58,7 @@ namespace CineBack.Datos.Implementacion
             foreach (DataRow fila in tabla.Rows)
             {
                 int cod = int.Parse(fila["id_cliente"].ToString());
-                string nom = fila["nombre"].ToString();
+                string nom = fila["colNombre"].ToString();
                 string ape = fila["apellido"].ToString();
                 string correo = fila["correo"].ToString();
                 int tel = int.Parse(fila["nro_tel"].ToString());
@@ -66,7 +66,7 @@ namespace CineBack.Datos.Implementacion
                 string calle = fila["calle"].ToString();
                 int calleNro = int.Parse(fila["calle_nro"].ToString());
                 int dni = int.Parse(fila["dni"].ToString());
-                Cliente c = new Cliente(cod, nom, ape, correo, tel, barrio, calle, calleNro, dni);
+                Cliente c = new Cliente(cod,nom,ape,correo,tel,barrio,calle,calleNro,dni);
                 lClientes.Add(c);
             }
             return lClientes;
