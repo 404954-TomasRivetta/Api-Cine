@@ -534,19 +534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pc\\.nuget\\packages\\": {}
+    "C:\\Users\\Sarie\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pc\\Desktop\\ProyectoProg\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "projectUniqueName": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
       "projectName": "CineFront",
-      "projectPath": "C:\\Users\\Pc\\Desktop\\ProyectoProg\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pc\\Desktop\\ProyectoProg\\Api-Cine\\CineApp\\CineFront\\obj\\",
+      "projectPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "packagesPath": "C:\\Users\\Sarie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sarie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -560,8 +560,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Pc\\Desktop\\ProyectoProg\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-              "projectPath": "C:\\Users\\Pc\\Desktop\\ProyectoProg\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+            "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
             }
           }
         }
@@ -604,7 +604,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

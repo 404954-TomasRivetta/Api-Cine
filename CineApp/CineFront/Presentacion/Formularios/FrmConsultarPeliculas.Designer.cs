@@ -32,14 +32,14 @@
             btnEliminar = new Button();
             btnSalir = new Button();
             grpFiltros = new GroupBox();
+            label3 = new Label();
+            cboIdioma = new ComboBox();
+            cboPublico = new ComboBox();
+            label2 = new Label();
+            cboGenero = new ComboBox();
+            label1 = new Label();
             btnConsultar = new Button();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
-            cboGenero = new ComboBox();
-            label2 = new Label();
-            cboPublico = new ComboBox();
-            cboIdioma = new ComboBox();
-            label3 = new Label();
             grpFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -93,6 +93,57 @@
             grpFiltros.TabStop = false;
             grpFiltros.Text = "Filtros";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(403, 30);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 15);
+            label3.TabIndex = 21;
+            label3.Text = "Idioma: ";
+            // 
+            // cboIdioma
+            // 
+            cboIdioma.FormattingEnabled = true;
+            cboIdioma.Location = new Point(460, 27);
+            cboIdioma.Name = "cboIdioma";
+            cboIdioma.Size = new Size(121, 23);
+            cboIdioma.TabIndex = 20;
+            // 
+            // cboPublico
+            // 
+            cboPublico.FormattingEnabled = true;
+            cboPublico.Location = new Point(260, 27);
+            cboPublico.Name = "cboPublico";
+            cboPublico.Size = new Size(121, 23);
+            cboPublico.TabIndex = 19;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(201, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 15);
+            label2.TabIndex = 17;
+            label2.Text = "Publico: ";
+            // 
+            // cboGenero
+            // 
+            cboGenero.FormattingEnabled = true;
+            cboGenero.Location = new Point(64, 27);
+            cboGenero.Name = "cboGenero";
+            cboGenero.Size = new Size(121, 23);
+            cboGenero.TabIndex = 18;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(7, 30);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 15);
+            label1.TabIndex = 17;
+            label1.Text = "Genero: ";
+            // 
             // btnConsultar
             // 
             btnConsultar.Location = new Point(607, 72);
@@ -112,57 +163,6 @@
             dataGridView1.Size = new Size(750, 150);
             dataGridView1.TabIndex = 16;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(7, 30);
-            label1.Name = "label1";
-            label1.Size = new Size(51, 15);
-            label1.TabIndex = 17;
-            label1.Text = "Genero: ";
-            // 
-            // cboGenero
-            // 
-            cboGenero.FormattingEnabled = true;
-            cboGenero.Location = new Point(64, 27);
-            cboGenero.Name = "cboGenero";
-            cboGenero.Size = new Size(121, 23);
-            cboGenero.TabIndex = 18;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(201, 30);
-            label2.Name = "label2";
-            label2.Size = new Size(53, 15);
-            label2.TabIndex = 17;
-            label2.Text = "Publico: ";
-            // 
-            // cboPublico
-            // 
-            cboPublico.FormattingEnabled = true;
-            cboPublico.Location = new Point(260, 27);
-            cboPublico.Name = "cboPublico";
-            cboPublico.Size = new Size(121, 23);
-            cboPublico.TabIndex = 19;
-            // 
-            // cboIdioma
-            // 
-            cboIdioma.FormattingEnabled = true;
-            cboIdioma.Location = new Point(460, 27);
-            cboIdioma.Name = "cboIdioma";
-            cboIdioma.Size = new Size(121, 23);
-            cboIdioma.TabIndex = 20;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(403, 30);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 15);
-            label3.TabIndex = 21;
-            label3.Text = "Idioma: ";
-            // 
             // FrmConsultarPeliculas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,7 +174,7 @@
             Controls.Add(btnSalir);
             Controls.Add(grpFiltros);
             Name = "FrmConsultarPeliculas";
-            Text = "FrmConsultarPeliculas";
+            Text = "Consulta de Peliculas";
             Load += FrmConsultarPeliculas_Load;
             grpFiltros.ResumeLayout(false);
             grpFiltros.PerformLayout();

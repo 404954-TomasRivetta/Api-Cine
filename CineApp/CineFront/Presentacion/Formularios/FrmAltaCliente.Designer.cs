@@ -1,6 +1,6 @@
 ﻿namespace CineFront.Presentacion.Formularios
 {
-    partial class FrmAltaCliente
+    partial class FrmAltaCliente2
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(80, 408);
+            btnAceptar.Location = new Point(70, 407);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(99, 23);
             btnAceptar.TabIndex = 38;
@@ -214,7 +214,7 @@
             label1.TabIndex = 21;
             label1.Text = "NUEVO CLIENTE";
             // 
-            // FrmAltaCliente
+            // FrmAltaCliente2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -238,8 +238,8 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "FrmAltaCliente";
-            Text = "FrmAltaCliente2";
+            Name = "FrmAltaCliente2";
+            Text = "Clientes";
             Load += FrmAltaCliente_Load;
             ResumeLayout(false);
             PerformLayout();

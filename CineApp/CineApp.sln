@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineBack", "CineBack\CineBack.csproj", "{00969226-3663-4951-BAEB-156CDCDD033A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineBack", "CineBack\CineBack.csproj", "{00969226-3663-4951-BAEB-156CDCDD033A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineApi", "CineApi\CineApi.csproj", "{55DCDEB3-1747-44B8-83F5-C5E6939B8AC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineApi", "CineApi\CineApi.csproj", "{55DCDEB3-1747-44B8-83F5-C5E6939B8AC1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{00969226-3663-4951-BAEB-156CDCDD033A} = {00969226-3663-4951-BAEB-156CDCDD033A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineFront", "CineFront\CineFront.csproj", "{AC7E42B2-68B2-4AED-B7DC-FC48D89459AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineFront", "CineFront\CineFront.csproj", "{AC7E42B2-68B2-4AED-B7DC-FC48D89459AE}"
 	ProjectSection(ProjectDependencies) = postProject
 		{00969226-3663-4951-BAEB-156CDCDD033A} = {00969226-3663-4951-BAEB-156CDCDD033A}
 		{55DCDEB3-1747-44B8-83F5-C5E6939B8AC1} = {55DCDEB3-1747-44B8-83F5-C5E6939B8AC1}

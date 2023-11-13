@@ -17,5 +17,9 @@ namespace CineFront.Presentacion.Formularios
             InitializeComponent();
         }
 
+        private void FrmAcercaDe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

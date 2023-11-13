@@ -98,6 +98,7 @@
             Controls.Add(label1);
             Name = "FrmAcercaDe";
             Text = "FrmAcercaDe";
+            Load += FrmAcercaDe_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

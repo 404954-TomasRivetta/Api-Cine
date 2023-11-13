@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace CineFront.Presentacion.Formularios
 {
-    public partial class FrmAltaCliente : Form
+    public partial class FrmAltaCliente2 : Form
     {
-        public FrmAltaCliente()
+        public FrmAltaCliente2()
         {
             InitializeComponent();
         }
@@ -36,39 +36,39 @@ namespace CineFront.Presentacion.Formularios
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            
+
             GrabarCliente();
         }
         private async void GrabarCliente()
-        {            
-                Cliente c = new Cliente();
-                c.Nombre = txtNombre.Text;
-                c.Apellido = txtApellido.Text;
-                c.NroTel = Convert.ToInt32(txtNroTel.Text);
-                c.Correo = txtCorreo.Text;
-                c.CodBarrio = Convert.ToInt32(cboBarrios.SelectedValue);
-                c.Calle = txtCalle.Text;
-                c.CalleNro = Convert.ToInt32(txtAltura.Text);
-                c.Dni = Convert.ToInt32(txtDni.Text);
-                if (await GuardarClienteAsync(c))
-                {
-                    MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    this.Dispose();
-                }
-                else
-                {
-                    MessageBox.Show("NO se pudo registrar el cliente...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }            
+        {
+            Cliente c = new Cliente();
+            c.Nombre = txtNombre.Text;
+            c.Apellido = txtApellido.Text;
+            c.NroTel = Convert.ToInt32(txtNroTel.Text);
+            c.Correo = txtCorreo.Text;
+            c.CodBarrio = Convert.ToInt32(cboBarrios.SelectedValue);
+            c.Calle = txtCalle.Text;
+            c.CalleNro = Convert.ToInt32(txtAltura.Text);
+            c.Dni = Convert.ToInt32(txtDni.Text);
+            if (await GuardarClienteAsync(c))
+            {
+                MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("NO se pudo registrar el cliente...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
         }
         private async Task<bool> GuardarClienteAsync(Cliente nuevo)
         {
             string url = "https://localhost:7149/clientes";
             string clienteJson = JsonConvert.SerializeObject(nuevo);
             var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, clienteJson);
-            if (dataJson.Equals(""))            
-                return true;            
-            else            
-                return false;            
+            if (dataJson.Equals(""))
+                return true;
+            else
+                return false;
         }
     }
 }
