@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace CineFront.Servicio
 {
-<<<<<<< HEAD:CineApp/CineFront/Servicios/ClienteSingleton.cs
-    internal class ClienteSingleton
-    {
-=======
     public class ClienteSingleton
     {
         private static ClienteSingleton instancia;
@@ -63,7 +59,5 @@ namespace CineFront.Servicio
 
             return response;
         }
-
->>>>>>> e768b01233634d4460b74e362709db828587009b:CineApp/CineFront/Servicio/ClienteSingleton.cs
     }
 }
