@@ -21,7 +21,7 @@ namespace CineFront.Servicio
             client = new HttpClient();
         }
 
-        public static ClienteSingleton getInstance()
+        public static ClienteSingleton GetInstance()
         {
 
             if (instancia == null)

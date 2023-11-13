@@ -25,3 +25,44 @@ C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\refint
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.pdb
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\ref\CineApi.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\appsettings.Development.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\appsettings.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.exe
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.deps.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.runtimeconfig.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineApi.pdb
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineBack.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\bin\Debug\net6.0\CineBack.pdb
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.AssemblyReference.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.AssemblyInfoInputs.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.AssemblyInfo.cs
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.CoreCompileInputs.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.MvcApplicationPartsAssemblyInfo.cs
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.MvcApplicationPartsAssemblyInfo.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.CineApi.Microsoft.AspNetCore.StaticWebAssets.props
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.build.CineApi.props
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CineApi.props
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CineApi.props
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.pack.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.build.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\staticwebassets.development.json
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\scopedcss\bundle\CineApi.styles.css
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.csproj.CopyComplete
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\refint\CineApi.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.pdb
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\CineApi.genruntimeconfig.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineApi\obj\Debug\net6.0\ref\CineApi.dll

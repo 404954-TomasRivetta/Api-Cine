@@ -15,3 +15,13 @@ C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-wind
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\hola 2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.AssemblyReference.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAcercaDe.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.GenerateResource.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfoInputs.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.AssemblyInfo.cs
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.CoreCompileInputs.cache
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\refint\CineFront.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
