@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Presentacion\Formularios\FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Update="Presentacion\Formularios\FrmConsultarPeliculas.cs">
+=======
+    <Compile Update="Presentacion\Formularios\FrmAltaCliente.cs">
+>>>>>>> c183c7eca1c9d6dc4eb5058bd685c9c661a93846
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
