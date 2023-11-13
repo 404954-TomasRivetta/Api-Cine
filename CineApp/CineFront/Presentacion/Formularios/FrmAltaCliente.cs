@@ -65,14 +65,10 @@ namespace CineFront.Presentacion.Formularios
             string url = "https://localhost:7149/clientes";
             string clienteJson = JsonConvert.SerializeObject(nuevo);
             var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, clienteJson);
-            if (dataJson.Equals(""))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            if (dataJson.Equals(""))            
+                return true;            
+            else            
+                return false;            
         }
     }
 }

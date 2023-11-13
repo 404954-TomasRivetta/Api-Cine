@@ -12,7 +12,7 @@ namespace CineBack.Fachada.Implementacion
 {
     public class AplicacionCliente: IAplicacionCliente
     {
-        IClienteDao dao;
+        private IClienteDao dao;
 
         public AplicacionCliente()
         {

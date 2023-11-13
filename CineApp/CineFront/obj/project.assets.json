@@ -534,19 +534,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CESAR\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
       "projectName": "CineFront",
-      "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-      "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineFront\\obj\\",
+      "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -560,8 +560,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-              "projectPath": "C:\\Users\\CESAR\\Desktop\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+            "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+              "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
             }
           }
         }
@@ -604,7 +604,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
