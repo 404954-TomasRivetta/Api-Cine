@@ -16,7 +16,7 @@ namespace CineBack.Datos
 
         public HelperDB()
         {
-            conexion = new SqlConnection(@"Data Source=DESKTOP-U9PV955\SQLEXPRESS;Initial Catalog=DB_OrdenesParcial;Integrated Security=True");
+            conexion = new SqlConnection(Properties.Resources.CadenaConexion);
         }
 
         public static HelperDB ObtenerInstancia()
