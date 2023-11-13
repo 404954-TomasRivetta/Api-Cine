@@ -59,6 +59,5 @@ namespace CineFront.Servicio
 
             return response;
         }
-
     }
 }
