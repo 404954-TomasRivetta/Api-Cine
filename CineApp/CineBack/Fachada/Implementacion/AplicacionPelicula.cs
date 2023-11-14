@@ -1,4 +1,5 @@
-﻿using CineBack.Entidades;
+﻿using CineBack.Datos.Implementacion;
+using CineBack.Entidades;
 using CineBack.Fachada.Interfaz;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace CineBack.Fachada.Implementacion
 {
     public class AplicacionPelicula : IAplicacionPelicula
     {
-        //Completar...
+        private ClienteDao dao;
         public List<Actor> GetActoresPel()
         {
             throw new NotImplementedException();

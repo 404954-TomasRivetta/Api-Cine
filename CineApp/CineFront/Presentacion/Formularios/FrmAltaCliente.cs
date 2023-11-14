@@ -26,7 +26,7 @@ namespace CineFront.Presentacion.Formularios
         }
         private async Task CargarBarriosAsync()
         {
-            string url = "http://localhost:5175/barrios";
+            string url = "http://localhost:7149/barrios";
             var dataJson = await ClienteSingleton.GetInstance().GetAsync(url);
             List<Barrio> lBarrios = JsonConvert.DeserializeObject<List<Barrio>>(dataJson);
             cboBarrios.DataSource = lBarrios;

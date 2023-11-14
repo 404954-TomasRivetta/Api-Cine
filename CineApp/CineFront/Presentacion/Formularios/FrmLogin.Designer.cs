@@ -48,7 +48,7 @@ namespace CineFront.Presentacion.Formularios
             // 
             btncerrar.BackColor = Color.Black;
             btncerrar.Image = (Image)resources.GetObject("btncerrar.Image");
-            btncerrar.Location = new Point(821, 45);
+            btncerrar.Location = new Point(824, 45);
             btncerrar.Margin = new Padding(4, 3, 4, 3);
             btncerrar.Name = "btncerrar";
             btncerrar.Size = new Size(28, 29);
@@ -141,7 +141,7 @@ namespace CineFront.Presentacion.Formularios
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
-            // form
+            // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -154,7 +154,7 @@ namespace CineFront.Presentacion.Formularios
             Controls.Add(txtuser);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "form";
+            Name = "FrmLogin";
             Opacity = 0.85D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "form";
