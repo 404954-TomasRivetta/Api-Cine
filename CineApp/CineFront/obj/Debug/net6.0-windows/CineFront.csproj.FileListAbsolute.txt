@@ -45,7 +45,6 @@ C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineF
 C:\Users\CESAR\Desktop\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.AssemblyReference.cache
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAcercaDe.resources
-D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaCliente.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmConsultarPeliculas.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.csproj.GenerateResource.cache
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.GeneratedMSBuildEditorConfig.editorconfig
@@ -106,3 +105,8 @@ C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\Ci
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaCliente2.resources
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmLogin.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\prueba.FormMainMenu.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaCliente2.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmConsultarCliente.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmLogin.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Properties.Resources.resources

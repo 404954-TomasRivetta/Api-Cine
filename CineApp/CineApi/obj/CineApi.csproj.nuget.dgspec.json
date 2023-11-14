@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
         "projectName": "CineApi",
-        "projectPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-        "packagesPath": "C:\\Users\\Sarie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineApi\\obj\\",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sarie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-                "projectPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+              "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+                "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
               }
             }
           }
@@ -80,17 +80,17 @@
         }
       }
     },
-    "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\Sarie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sarie\\Desktop\\cm\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Sarie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

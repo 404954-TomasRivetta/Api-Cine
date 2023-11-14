@@ -43,3 +43,5 @@ C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.dl
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\refint\CineBack.dll
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.pdb
 C:\Users\Sarie\Desktop\cm\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\ref\CineBack.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.Properties.Resources.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineBack\obj\Debug\net6.0\CineBack.csproj.GenerateResource.cache
