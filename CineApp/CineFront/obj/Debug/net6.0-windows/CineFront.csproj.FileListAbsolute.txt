@@ -110,9 +110,7 @@ D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmConsultarCliente.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmLogin.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Properties.Resources.resources
-<<<<<<< HEAD
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaPelicula.resources
-=======
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.exe
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.deps.json
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\CineFront.runtimeconfig.json
@@ -181,7 +179,6 @@ C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-window
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\Cine\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
->>>>>>> ea3bb3189ed4e8e42be00e21dfc259e17f41c5e6
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\bin\Debug\net6.0-windows\Microsoft.ReportViewer.Common.dll
@@ -335,3 +332,4 @@ C:\Users\Usuario\Desktop\cine bro\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-wi
 C:\Users\Usuario\Desktop\cine bro\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.pdb
 C:\Users\Usuario\Desktop\cine bro\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\cine bro\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\ref\CineFront.dll
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmReporteGeneros.resources

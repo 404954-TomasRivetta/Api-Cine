@@ -21,11 +21,11 @@ namespace CineFront.Presentacion.Formularios
             InitializeComponent();
             nuevo= new Cliente();
         }
-        private async void FrmAltaCliente_Load(object sender, EventArgs e)
-        {
-            await CargarBarriosAsync();
-            cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
-        }
+        //private async void FrmAltaCliente_Load(object sender, EventArgs e)
+        //{
+        //    await CargarBarriosAsync();
+        //    cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
+        //}
         private async Task CargarBarriosAsync()
         {
             string url = "http://localhost:7149/barrios";
@@ -72,9 +72,10 @@ namespace CineFront.Presentacion.Formularios
                 return false;
         }
 
-        private void FrmAltaCliente2_Load(object sender, EventArgs e)
+        private async void FrmAltaCliente2_Load(object sender, EventArgs e)
         {
-
+            await CargarBarriosAsync();
+            cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
         }
     }
 }

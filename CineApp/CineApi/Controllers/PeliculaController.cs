@@ -107,16 +107,9 @@ namespace CineApi.Controllers
                 {
                     return BadRequest("Pelicula Inválida, FALTAN CAMPOS...");
                 }
-                if (app.SavePelicula(pel))
-                {
-                    return Ok(pel);
-                }
-                else
-                {
-                    return NotFound("No se pudo guardar la pelicula!!!");
-                }
+               return Ok(app.SavePelicula(pel));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return StatusCode(500, "Error interno!!! Intente luego");
             }

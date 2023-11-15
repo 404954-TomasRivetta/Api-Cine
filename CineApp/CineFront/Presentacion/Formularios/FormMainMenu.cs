@@ -143,7 +143,7 @@ namespace prueba
 
         private void btnProducts_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new FrmAltaCliente2(), sender);
+            OpenChildForm(new FrmAltaCliente(), sender);
         }
 
         private void button1_Click(object sender, EventArgs e)

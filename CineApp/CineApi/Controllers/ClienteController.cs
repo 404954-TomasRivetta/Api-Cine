@@ -46,16 +46,7 @@ namespace CineApi.Controllers
                 {
                     return BadRequest("Cliente Invalido,FALTAN CAMPOS...");
                 }
-                if (app.SaveCliente(oCliente))
-                {
-                    return Ok(oCliente);
-                }
-                else
-                {
-                    return NotFound("No se pudo guardar el cliente!!!");
-                }
-
-
+                return Ok(app.SaveCliente(oCliente));
             }
             catch (Exception)
             {
