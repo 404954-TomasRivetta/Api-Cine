@@ -14,5 +14,10 @@ namespace CineBack.Entidades
         {
             return Descripcion;
         }
+        public TipoPublico(int id,string desc)
+        {
+            IdTipoPublico = id;
+            Descripcion = desc;
+        }
     }
 }

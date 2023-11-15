@@ -1,4 +1,5 @@
 ﻿using CineBack.Datos.Implementacion;
+using CineBack.Datos.Interfaz;
 using CineBack.Entidades;
 using CineBack.Fachada.Interfaz;
 using System;
@@ -11,7 +12,11 @@ namespace CineBack.Fachada.Implementacion
 {
     public class AplicacionPelicula : IAplicacionPelicula
     {
-        private ClienteDao dao;
+        private IPeliculaDao dao;
+        public AplicacionPelicula()
+        {
+            dao=new PeliculaDao();
+        }
         public List<Actor> GetActoresPel()
         {
             throw new NotImplementedException();
@@ -19,27 +24,27 @@ namespace CineBack.Fachada.Implementacion
 
         public List<Dialecto> GetDialectos()
         {
-            throw new NotImplementedException();
+            return dao.TraerDialectos();
         }
 
         public List<Director> GetDirectores()
         {
-            throw new NotImplementedException();
+            return dao.TraerDirectores();
         }
 
         public List<TipoPelicula> GetTiposPeliculas()
         {
-            throw new NotImplementedException();
+            return dao.TraerTiposPelicula();
         }
 
         public List<TipoPublico> GetTiposPublicos()
         {
-            throw new NotImplementedException();
+            return dao.TraerTiposPublico();
         }
 
         public bool SavePelicula(Pelicula oPelicula)
         {
-            throw new NotImplementedException();
+            return dao.Crear(oPelicula);
         }
     }
 }

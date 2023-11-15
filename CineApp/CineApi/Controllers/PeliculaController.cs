@@ -97,8 +97,7 @@ namespace CineApi.Controllers
                 return StatusCode(500, "Error interno!!!, intente luego");
             }
         }
-
-        [HttpPost]
+        [HttpPost("/pelicula")]
         public IActionResult SavePelicula(Pelicula pel)
         {
             try
@@ -116,8 +115,6 @@ namespace CineApi.Controllers
                 {
                     return NotFound("No se pudo guardar la pelicula!!!");
                 }
-
-
             }
             catch (Exception)
             {

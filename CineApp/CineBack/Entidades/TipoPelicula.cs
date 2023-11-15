@@ -15,6 +15,11 @@ namespace CineBack.Entidades
         {
             return Descripcion;
         }
+        public TipoPelicula(int id,string desc)
+        {
+            IdTipoPelicula= id;
+            Descripcion= desc;
+        }
 
     }
 }

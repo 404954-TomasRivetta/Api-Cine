@@ -15,5 +15,10 @@ namespace CineBack.Entidades
         {
             return Descripcion;
         }
+        public Dialecto(int id,string desc)
+        {
+            IdIdioma = id;
+            Descripcion = desc;
+        }
     }
 }

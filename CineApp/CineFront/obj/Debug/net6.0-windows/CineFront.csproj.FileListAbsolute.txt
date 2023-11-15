@@ -110,3 +110,4 @@ D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmConsultarCliente.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmLogin.resources
 D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Properties.Resources.resources
+D:\rodri-tp-prog2\Api-Cine\CineApp\CineFront\obj\Debug\net6.0-windows\CineFront.Presentacion.Formularios.FrmAltaPelicula.resources

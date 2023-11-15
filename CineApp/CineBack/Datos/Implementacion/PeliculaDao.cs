@@ -131,29 +131,78 @@ namespace CineBack.Datos.Implementacion
             return resultado;
         }
 
-        public List<Pelicula> TraerPeliculas()
+        public List<Dialecto> TraerDialectos()
         {
-            
+            List<Dialecto>lDialectos=new List<Dialecto> ();
+            DataTable tabla = HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_DIALECTOS");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int id = int.Parse(fila["id_idioma"].ToString());
+                string desc = fila["descripcion"].ToString();
+                Dialecto d=new Dialecto(id, desc);
+                lDialectos.Add(d);
+            }
+            return lDialectos;
+        }
+
+        public List<Director> TraerDirectores()
+        {
+            List<Director>lDirectores=new List<Director>();
+            DataTable tabla = HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_DIRECTORES");
+            foreach(DataRow fila in tabla.Rows)
+            {
+                int id= int.Parse(fila["id_director"].ToString());
+                string nom = fila["nombre"].ToString();
+                string ape = fila["apellido"].ToString();
+                Director d = new Director(id,nom,ape);
+                lDirectores.Add(d);
+            }
+            return lDirectores;
+        }
+        public List<Pelicula> TraerPeliculas()
+        {            
                 List<Pelicula> lPeliculas = new List<Pelicula>();
                 DataTable tabla = HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_PELICULAS");
                 foreach (DataRow fila in tabla.Rows)
-                {
-                
-                 string desc = fila["descripcion"].ToString();
-                 int id_tipo_pelicula = int.Parse(fila["id_tipo_pelicula "].ToString());
-                 int id_idioma = int.Parse(fila["id_idioma "].ToString());
-                int id_tipo_publico = int.Parse(fila["id_tipo_publico "].ToString());
-                bool subtitulada = Convert.ToBoolean(int.Parse(fila["id_tipo_pelicula "].ToString()));
-                int id_director = int.Parse(fila["id_tipo_pelicula "].ToString());
-
-
-
-
-                Pelicula peli = new Pelicula(desc,id_tipo_pelicula,id_idioma,id_tipo_publico,subtitulada,id_director);
+                {                
+                    string desc = fila["descripcion"].ToString();
+                    int id_tipo_pelicula = int.Parse(fila["id_tipo_pelicula "].ToString());
+                    int id_idioma = int.Parse(fila["id_idioma "].ToString());
+                    int id_tipo_publico = int.Parse(fila["id_tipo_publico "].ToString());
+                    int subtitulada = int.Parse(fila["id_tipo_pelicula "].ToString());
+                    int id_director = int.Parse(fila["id_tipo_pelicula "].ToString());
+                    Pelicula peli = new Pelicula(desc,id_tipo_pelicula,id_idioma,id_tipo_publico,subtitulada,id_director);
                     lPeliculas.Add(peli);
                 }
-                return lPeliculas;
-            
+                return lPeliculas;            
+        }
+
+        public List<TipoPelicula> TraerTiposPelicula()
+        {
+            List<TipoPelicula>lPeliculas= new List<TipoPelicula>();
+            DataTable tabla = HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_TIPOS_PELICULAS");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int id = int.Parse(fila["id_tipo_pelicula"].ToString());
+                string desc = fila["descripcion"].ToString();
+                TipoPelicula t = new TipoPelicula(id, desc);
+                lPeliculas.Add(t);
+            }
+            return lPeliculas;
+        }
+
+        public List<TipoPublico> TraerTiposPublico()
+        {
+            List <TipoPublico> lTipoPublicos =new List<TipoPublico>();
+            DataTable tabla = HelperDB.ObtenerInstancia().Consultar("SP_CONSULTAR_TIPOS_PUBLICO");
+            foreach (DataRow fila in tabla.Rows)
+            {
+                int id = int.Parse(fila["id_tipo_publico"].ToString());
+                string desc = fila["descripcion"].ToString();
+                TipoPublico t=new TipoPublico(id, desc);
+                lTipoPublicos.Add(t);
+            }
+            return lTipoPublicos;
         }
     }
 }

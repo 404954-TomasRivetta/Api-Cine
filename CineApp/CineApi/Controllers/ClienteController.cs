@@ -36,7 +36,7 @@ namespace CineApi.Controllers
         }
 
         // POST api/<ClienteController>
-        [HttpPost]
+        [HttpPost("/cliente")]
         public IActionResult PostCliente(Cliente oCliente)
         {
             try
