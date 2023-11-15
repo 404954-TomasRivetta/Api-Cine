@@ -26,11 +26,17 @@
     <Compile Update="Presentacion\Formularios\FrmModificacionPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentacion\Formularios\FrmReporteGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentacion\Formularios\FrmReportePeliculas.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Update="Presentacion\Reportes\DSGeneros.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Update="Presentacion\Reportes\DSPeliculas.xsd">
       <SubType>Designer</SubType>
     </None>
