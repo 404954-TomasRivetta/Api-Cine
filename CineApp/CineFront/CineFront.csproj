@@ -9,10 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Presentacion\Reportes\RptGeneros.rdlc" />
     <None Remove="Presentacion\Reportes\RptPeliculas.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\Reportes\RptGeneros.rdlc" />
     <EmbeddedResource Include="Presentacion\Reportes\RptPeliculas.rdlc" />
   </ItemGroup>
 
@@ -30,6 +32,11 @@
   <ItemGroup>
     <Compile Update="Presentacion\Formularios\FormMainMenu.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\Reportes\DSGeneros.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSGeneros.xsd</DependentUpon>
     </Compile>
     <Compile Update="Presentacion\Reportes\DSPeliculas.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -52,6 +59,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Presentacion\Reportes\DSGeneros.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGeneros.Designer.cs</LastGenOutput>
+    </None>
     <None Update="Presentacion\Reportes\DSPeliculas.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DSPeliculas.Designer.cs</LastGenOutput>
