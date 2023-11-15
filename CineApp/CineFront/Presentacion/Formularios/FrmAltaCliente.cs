@@ -15,9 +15,11 @@ namespace CineFront.Presentacion.Formularios
 {
     public partial class FrmAltaCliente2 : Form
     {
+        Cliente nuevo = null;
         public FrmAltaCliente2()
         {
             InitializeComponent();
+            nuevo= new Cliente();
         }
         private async void FrmAltaCliente_Load(object sender, EventArgs e)
         {
@@ -41,16 +43,15 @@ namespace CineFront.Presentacion.Formularios
         }
         private async void GrabarCliente()
         {
-            Cliente c = new Cliente();
-            c.Nombre = txtNombre.Text;
-            c.Apellido = txtApellido.Text;
-            c.NroTel = Convert.ToInt32(txtNroTel.Text);
-            c.Correo = txtCorreo.Text;
-            c.CodBarrio = Convert.ToInt32(cboBarrios.SelectedValue);
-            c.Calle = txtCalle.Text;
-            c.CalleNro = Convert.ToInt32(txtAltura.Text);
-            c.Dni = Convert.ToInt32(txtDni.Text);
-            if (await GuardarClienteAsync(c))
+            nuevo.Nombre = txtNombre.Text;
+            nuevo.Apellido = txtApellido.Text;
+            nuevo.NroTel = Convert.ToInt32(txtNroTel.Text);
+            nuevo.Correo = txtCorreo.Text;
+            nuevo.CodBarrio = Convert.ToInt32(cboBarrios.SelectedValue);
+            nuevo.Calle = txtCalle.Text;
+            nuevo.CalleNro = Convert.ToInt32(txtAltura.Text);
+            nuevo.Dni = Convert.ToInt32(txtDni.Text);
+            if (await GuardarClienteAsync(nuevo))
             {
                 MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Dispose();
@@ -62,7 +63,7 @@ namespace CineFront.Presentacion.Formularios
         }
         private async Task<bool> GuardarClienteAsync(Cliente nuevo)
         {
-            string url = "https://localhost:7149/clientes";
+            string url = "https://localhost:7149/cliente";
             string clienteJson = JsonConvert.SerializeObject(nuevo);
             var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, clienteJson);
             if (dataJson.Equals(""))

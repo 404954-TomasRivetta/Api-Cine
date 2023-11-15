@@ -81,15 +81,15 @@ namespace CineFront.Presentacion.Formularios
             nueva.IdTipoPelicula = cboTipoPelicula.SelectedIndex;
             nueva.IdTipoPublico = cboTipoPublico.SelectedIndex;
             nueva.IdIdioma = cboIdioma.SelectedIndex;
-            if(rbtSi.Checked)
+            if (rbtSi.Checked)
             {
                 nueva.Subtitulada = 1;
             }
-            else if(rbtNo.Checked)
+            else if (rbtNo.Checked)
             {
                 nueva.Subtitulada = 2;
             }
-            if(await GuardarPeliculAsync(nueva))
+            if (await GuardarPeliculAsync(nueva))
             {
                 MessageBox.Show("Se registró con éxito la pelicula...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Dispose();
@@ -100,11 +100,11 @@ namespace CineFront.Presentacion.Formularios
             }
 
         }
-        private async Task<bool>GuardarPeliculAsync(Pelicula nueva)
+        private async Task<bool> GuardarPeliculAsync(Pelicula nueva)
         {
             string url = "https://localhost:7149/pelicula";
-            string peliculaJson=JsonConvert.SerializeObject(nueva);
-            var dataJson=await ClienteSingleton.GetInstance().PostAsync(url, peliculaJson);
+            string peliculaJson = JsonConvert.SerializeObject(nueva);
+            var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, peliculaJson);
             if (dataJson.Equals(""))
                 return true;
             else
