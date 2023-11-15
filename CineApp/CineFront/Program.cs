@@ -1,4 +1,5 @@
 using CineFront.Presentacion.Formularios;
+using prueba;
 
 namespace CineFront
 {
@@ -13,7 +14,7 @@ namespace CineFront
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmReportePeliculas());
+            Application.Run(new FormMainMenu());
         }
     }
 }
