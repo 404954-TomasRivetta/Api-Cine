@@ -1,6 +1,5 @@
 ﻿using CineBack.Entidades;
 using CineFront.Servicio;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,38 +9,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using static System.Net.WebRequestMethods;
 
 namespace CineFront.Presentacion.Formularios
 {
-    public partial class FrmAltaCliente2 : Form
+    public partial class FrmAltaCliente : Form
     {
-        Cliente nuevo = null;
-        public FrmAltaCliente2()
+        private Cliente nuevo;
+        public FrmAltaCliente()
         {
             InitializeComponent();
-            nuevo= new Cliente();
+            nuevo = new Cliente();
         }
-        //private async void FrmAltaCliente_Load(object sender, EventArgs e)
-        //{
-        //    await CargarBarriosAsync();
-        //    cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
-        //}
-        private async Task CargarBarriosAsync()
+
+        private void FrmAltaCliente_Load(object sender, EventArgs e)
         {
-            string url = "http://localhost:7149/barrios";
-            var dataJson = await ClienteSingleton.GetInstance().GetAsync(url);
-            List<Barrio> lBarrios = JsonConvert.DeserializeObject<List<Barrio>>(dataJson);
-            cboBarrios.DataSource = lBarrios;
-            cboBarrios.ValueMember = "BarrioNro";
+            CargarBarriosAsync();
+        }
+        private async void CargarBarriosAsync()
+        {
+            string url = "https://localhost:7149/barrios";
+            var result = await ClienteSingleton.GetInstance().GetAsync(url);
+            var lst = JsonConvert.DeserializeObject<List<Barrio>>(result);
+            cboBarrios.DataSource = lst;
             cboBarrios.DisplayMember = "Descripcion";
+            cboBarrios.ValueMember = "BarrioNro";
         }
-
-        private void btnAceptar_Click(object sender, EventArgs e)
-        {
-
-            GrabarCliente();
-        }
-        private async void GrabarCliente()
+        private async Task GuardarClienteAsync()
         {
             nuevo.Nombre = txtNombre.Text;
             nuevo.Apellido = txtApellido.Text;
@@ -51,31 +46,25 @@ namespace CineFront.Presentacion.Formularios
             nuevo.Calle = txtCalle.Text;
             nuevo.CalleNro = Convert.ToInt32(txtAltura.Text);
             nuevo.Dni = Convert.ToInt32(txtDni.Text);
-            if (await GuardarClienteAsync(nuevo))
+            string bodyContent = JsonConvert.SerializeObject(nuevo);
+
+            string url = "https://localhost:7149/cliente";
+            var result = await ClienteSingleton.GetInstance().PostAsync(url, bodyContent);
+
+            if (result.Equals("true"))
             {
-                MessageBox.Show("Se registró con éxito el cliente...", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Cliente registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Dispose();
             }
             else
             {
-                MessageBox.Show("NO se pudo registrar el cliente...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("ERROR. No se pudo registrar el cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private async Task<bool> GuardarClienteAsync(Cliente nuevo)
-        {
-            string url = "https://localhost:7149/cliente";
-            string clienteJson = JsonConvert.SerializeObject(nuevo);
-            var dataJson = await ClienteSingleton.GetInstance().PostAsync(url, clienteJson);
-            if (dataJson.Equals(""))
-                return true;
-            else
-                return false;
-        }
 
-        private async void FrmAltaCliente2_Load(object sender, EventArgs e)
+        private async void btnAceptar_Click(object sender, EventArgs e)
         {
-            await CargarBarriosAsync();
-            cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
+            await GuardarClienteAsync();
         }
     }
 }

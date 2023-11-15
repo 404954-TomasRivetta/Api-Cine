@@ -2,6 +2,9 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Presentacion\Formularios\FrmAltaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentacion\Formularios\FrmAltaPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -9,9 +12,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\Formularios\FrmAcercaDe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Presentacion\Formularios\FrmAltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Presentacion\Formularios\FrmConsultarCliente.cs">
