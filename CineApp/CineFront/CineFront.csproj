@@ -9,12 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <None Remove="Presentacion\Reportes\RptPeliculas.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Presentacion\Reportes\" />
+    <EmbeddedResource Include="Presentacion\Reportes\RptPeliculas.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.18" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +29,11 @@
   <ItemGroup>
     <Compile Update="Presentacion\Formularios\FormMainMenu.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Presentacion\Reportes\DSPeliculas.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSPeliculas.xsd</DependentUpon>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
@@ -38,6 +48,13 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Presentacion\Reportes\DSPeliculas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPeliculas.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

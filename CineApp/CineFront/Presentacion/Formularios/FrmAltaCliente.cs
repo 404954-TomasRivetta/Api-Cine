@@ -71,5 +71,10 @@ namespace CineFront.Presentacion.Formularios
             else
                 return false;
         }
+
+        private void FrmAltaCliente2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
