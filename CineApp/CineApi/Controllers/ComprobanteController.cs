@@ -26,9 +26,9 @@ namespace CineApi.Controllers
                 lst = app.GetClientes();
                 return Ok(lst);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Error interno!!!, intente luego");
+                return StatusCode(500, ex.Message);
             }
         }
 
@@ -74,16 +74,8 @@ namespace CineApi.Controllers
                 {
                     return BadRequest("Comprobante Inválido,FALTAN CAMPOS...");
                 }
-                if (app.SaveComprobante(oC))
-                {
-                    return Ok(oC);
-                }
-                else
-                {
-                    return NotFound("No se pudo guardar el comprobante!!!");
-                }
-
-
+                return Ok(app.SaveComprobante(oC));
+                
             }
             catch (Exception)
             {

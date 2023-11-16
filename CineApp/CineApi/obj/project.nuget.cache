@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mJ86dGl8FZfYy/7W7ajhBsRXXqt1R1Bp2GpzZTFdRaXAQkVNHOalWl+oxnSP8kWsKE77tZldjhJf+90nAli+MA==",
+  "dgSpecHash": "b1Bwsu7642Um9Jqhrk7Jjg2VA1uEzIcQwTfVJcwyASdQqqWr85ik+7YA2Rbr9MXa4lbs8Z6Pj+wSx03UtSLW2w==",
   "success": true,
-  "projectFilePath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

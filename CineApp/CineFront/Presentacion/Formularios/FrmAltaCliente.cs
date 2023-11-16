@@ -23,7 +23,7 @@ namespace CineFront.Presentacion.Formularios
             nuevo = new Cliente();
         }
 
-        private void FrmAltaCliente_Load(object sender, EventArgs e)
+        private void FrmAltaCliente_Load_1(object sender, EventArgs e)
         {
             CargarBarriosAsync();
         }
@@ -66,5 +66,6 @@ namespace CineFront.Presentacion.Formularios
         {
             await GuardarClienteAsync();
         }
+
     }
 }

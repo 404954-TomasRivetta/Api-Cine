@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
   },
   "projects": {
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,25 +68,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineFront\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -97,8 +96,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-                "projectPath": "D:\\rodri-tp-prog2\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+              "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
               }
             }
           }
@@ -136,8 +135,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -149,7 +147,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
