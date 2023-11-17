@@ -63,31 +63,6 @@ los proyectos mencionados.
 ● El proyecto deberá estar subido a un repositorio público en la
 plataforma de versionado de código GITHUB.
 
-## Correrlo Localmente
-
-Clone el proyecto
-
-```bash
-  git clone https://link-to-project
-```
-
-Ir al directorio del proyecto
-
-```bash
-  cd my-project/name-folder
-```
-
-Abro la solucion del proyecto
-
-- CineApp.sln
-
-Install NuGet
-
-```bash
-  npm install
-```
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
 ## Feedback
 
 Si tiene algún comentario, comuníquese con nosotros en 
