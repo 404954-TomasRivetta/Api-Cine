@@ -13,5 +13,7 @@ namespace CineBack.Datos.Interfaz
         bool Borrar(Cliente cliente);
         bool Crear(Cliente cliente);
         List<Barrio> TraerBarrios();
+
+        List<Cliente> ObtenerClientesFiltrados(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido);
     }
 }

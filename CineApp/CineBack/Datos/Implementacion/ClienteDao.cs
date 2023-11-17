@@ -147,6 +147,29 @@ namespace CineBack.Datos.Implementacion
             return resultado;
         }
 
-       
+        public List<Cliente> ObtenerClientesFiltrados(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
+        {
+            List<Cliente> clientes = new List<Cliente>();
+            string sp = "SP_CONSULTAR_CLIENTES_CON_FILTROS";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@id_barrio", idBarrio != 0 ? idBarrio : DBNull.Value));
+            lst.Add(new Parametro("@fechaDesde", FechaDesde));
+            lst.Add(new Parametro("@fechaHasta", FechaHasta));
+            lst.Add(new Parametro("@cliente", apellido != string.Empty ? apellido : DBNull.Value));
+            DataTable dt = HelperDB.ObtenerInstancia().Consultar(sp, lst);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                Cliente c = new Cliente();
+                c.CodCliente = int.Parse(row[0].ToString());
+                c.NombreCompleto = row[1].ToString();
+                c.Correo = row[2].ToString();
+                c.NombreBarrio = row[3].ToString();
+                c.NombrePelicula = row[4].ToString();
+                clientes.Add(c);
+            }
+
+            return clientes;
+        }
     }
 }

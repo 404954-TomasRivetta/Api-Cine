@@ -173,6 +173,7 @@ namespace prueba
         private void BtnServicios_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new Forms.Servicios(), sender);
+            OpenChildForm(new FrmConsultarCliente(),sender);
         }
 
         private void Btnsalir_Click(object sender, EventArgs e)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CineBack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1be6173b804a7df65258106018ed6fb5fa1eb050")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9265b5970f0e813dc512e92ab16657a9962616f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CineBack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CineBack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
