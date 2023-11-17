@@ -32,6 +32,7 @@ namespace CineFront.Presentacion.Formularios
             string url = "https://localhost:7149/barrios";
             var result = await ClienteSingleton.GetInstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Barrio>>(result);
+            cboBarrios.DropDownStyle = ComboBoxStyle.DropDownList;
             cboBarrios.DataSource = lst;
             cboBarrios.DisplayMember = "Descripcion";
             cboBarrios.ValueMember = "BarrioNro";

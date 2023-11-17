@@ -2,6 +2,7 @@
 using CineBack.Fachada.Implementacion;
 using CineBack.Fachada.Interfaz;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 using System.Threading;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -53,6 +54,32 @@ namespace CineApi.Controllers
                 return StatusCode(500, "Error interno!!! Intente luego");
             }
         }
+        [HttpPut("clientes_modificar/{id}")]        
+        public async Task<IActionResult> Put(int id, Cliente cliente)
+        {
+            try
+            {
+                if (cliente == null)
+                {
+                    return BadRequest("Cliente Invalido, FALTAN CAMPOS...");
+                }
+
+                int result = app.ModifyCliente(cliente);
+                if (result>0)
+                {
+                    return Ok("Cliente modificado correctamente");
+                }
+                else
+                {
+                    return BadRequest("No se pudo modificar el cliente");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno: {ex.Message}");
+            }
+        }
+
 
         //// GET api/<ClienteController>/5
         //[HttpGet("{id}")]
@@ -67,16 +94,35 @@ namespace CineApi.Controllers
         //{
         //}
 
-        //// PUT api/<ClienteController>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
+        // PUT api/<ClienteController>/5
+        [HttpGet("/clientes/{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                Cliente cliente = await app.GetClientesIdAsync(id);
+                if (cliente != null)
+                    return Ok(cliente);
+                else
+                    return NotFound("Cliente Nro: " + id + " NO encontrado!");
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }            
+        }
+        
+    }
+    
+
+
+
+    
 
         //// DELETE api/<ClienteController>/5
         //[HttpDelete("{id}")]
         //public void Delete(int id)
         //{
         //}
-    }
-}
+ }
+

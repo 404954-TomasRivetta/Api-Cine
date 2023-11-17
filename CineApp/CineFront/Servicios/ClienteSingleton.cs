@@ -59,5 +59,20 @@ namespace CineFront.Servicio
 
             return response;
         }
+        public async Task<string> PutAsync(string urlPut, string dataJson)
+        {
+            StringContent content = new StringContent(dataJson, Encoding.UTF8, "application/json");
+
+            var result = await client.PutAsync(urlPut, content);
+
+            var response = "";
+
+            if (result.IsSuccessStatusCode)
+            {
+                response = await result.Content.ReadAsStringAsync();
+            }
+            return response;
+        }
+
     }
 }

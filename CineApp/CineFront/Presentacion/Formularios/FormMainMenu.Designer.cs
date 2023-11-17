@@ -43,8 +43,8 @@
             btnCloseChildForm = new Button();
             lblTitle = new Label();
             panelDesktopPane = new Panel();
-            pictureBox1 = new PictureBox();
             LblSlogan = new Label();
+            pictureBox1 = new PictureBox();
             panelMenu.SuspendLayout();
             panelLogo.SuspendLayout();
             panelTitleBar.SuspendLayout();
@@ -267,15 +267,6 @@
             panelDesktopPane.Size = new Size(881, 604);
             panelDesktopPane.TabIndex = 2;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(3, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(881, 601);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // LblSlogan
             // 
             LblSlogan.AutoSize = true;
@@ -286,6 +277,15 @@
             LblSlogan.TabIndex = 1;
             LblSlogan.Text = "Cines pato";
             LblSlogan.Click += LblSlogan_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(3, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(881, 601);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // FormMainMenu
             // 

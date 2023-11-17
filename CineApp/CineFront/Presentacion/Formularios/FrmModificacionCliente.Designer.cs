@@ -68,11 +68,11 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(323, 146);
+            label8.Location = new Point(310, 146);
             label8.Name = "label8";
-            label8.Size = new Size(42, 17);
+            label8.Size = new Size(64, 17);
             label8.TabIndex = 51;
-            label8.Text = "Altura";
+            label8.Text = "Nro. calle";
             // 
             // label7
             // 
@@ -115,7 +115,7 @@
             // 
             // txtCalle
             // 
-            txtCalle.Location = new Point(380, 85);
+            txtCalle.Location = new Point(380, 88);
             txtCalle.Name = "txtCalle";
             txtCalle.Size = new Size(237, 23);
             txtCalle.TabIndex = 45;
@@ -208,7 +208,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(643, 361);
+            ClientSize = new Size(671, 362);
             Controls.Add(btnCancelar);
             Controls.Add(btnModificar);
             Controls.Add(txtCorreo);

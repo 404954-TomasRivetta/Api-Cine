@@ -149,7 +149,7 @@ namespace prueba
         private void button1_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new Forms.Empleados(), sender);
-            OpenChildForm(new FrmAltaPelicula(),sender);
+            OpenChildForm(new FrmAltaPelicula(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)

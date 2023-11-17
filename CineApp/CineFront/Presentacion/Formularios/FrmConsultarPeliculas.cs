@@ -64,5 +64,10 @@ namespace CineFront.Presentacion.Formularios
                 this.Dispose();
             }
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

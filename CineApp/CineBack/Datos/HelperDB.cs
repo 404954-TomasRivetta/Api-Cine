@@ -84,44 +84,22 @@ namespace CineBack.Datos
             return dt;
         }
 
-        public int EjecutarSQL(string strSql, List<Parametro> values)
+        public int EjecutarSQL(string sp, List<Parametro> lParametros)
         {
-            int afectadas = 0;
-            SqlTransaction t = null;
+            int filasAfectadas;
+            conexion.Open();
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandType= CommandType.StoredProcedure;
+            comando.CommandText = sp;
 
-            try
+            foreach (Parametro p in lParametros)
             {
-                SqlCommand cmd = new SqlCommand();
-                conexion.Open();
-                t = conexion.BeginTransaction();
-                cmd.Connection = conexion;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = strSql;
-                cmd.Transaction = t;
-
-                if (values != null)
-                {
-                    foreach (Parametro param in values)
-                    {
-                        cmd.Parameters.AddWithValue(param.Nombre, param.Valor);
-                    }
-                }
-
-                afectadas = cmd.ExecuteNonQuery();
-                t.Commit();
+                comando.Parameters.AddWithValue(p.Nombre, p.Valor);
             }
-            catch (SqlException)
-            {
-                if (t != null) { t.Rollback(); }
-            }
-            finally
-            {
-                if (conexion != null && conexion.State == ConnectionState.Open)
-                    conexion.Close();
-
-            }
-
-            return afectadas;
+            filasAfectadas = comando.ExecuteNonQuery();
+            conexion.Close();
+            return filasAfectadas;
         }
 
     }

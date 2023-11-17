@@ -29,7 +29,7 @@ namespace CineBack.Fachada.Implementacion
             return dao.Crear(oCliente);
         }
 
-        public bool ModifyCliente(Cliente oCliente)
+        public int ModifyCliente(Cliente oCliente)
         {
             return dao.Modificar(oCliente);
         }
@@ -37,6 +37,11 @@ namespace CineBack.Fachada.Implementacion
         public bool DeleteCliente(Cliente oCliente)
         {
             return dao.Borrar(oCliente);
+        }
+
+        public async Task <Cliente> GetClientesIdAsync(int id)
+        {
+            return dao.TraerClienteId(id);
         }
     }
 }

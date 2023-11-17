@@ -89,7 +89,7 @@ namespace CineFront.Presentacion.Formularios
             {
                 nueva.Subtitulada = 2;
             }
-            await GuardarPeliculAsync(nueva);            
+            await GuardarPeliculAsync(nueva);
         }
         private async Task GuardarPeliculAsync(Pelicula nueva)
         {
@@ -99,13 +99,13 @@ namespace CineFront.Presentacion.Formularios
 
             if (dataJson.Equals("true"))
             {
-                MessageBox.Show("Se registró con exito la pelicula", "Informe", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Se registró con exito la pelicula", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Dispose();
             }
             else
             {
                 MessageBox.Show("ERROR. No se pudo registrar la pelicula", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
+
             }
         }
         private void rbtSi_CheckedChanged(object sender, EventArgs e)

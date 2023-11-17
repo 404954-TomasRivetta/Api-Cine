@@ -9,9 +9,10 @@ namespace CineBack.Datos.Interfaz
 {
     public interface IClienteDao
     {
-        bool Modificar(Cliente cliente);
+        int Modificar(Cliente cliente);
         bool Borrar(Cliente cliente);
-        bool Crear(Cliente cliente);
-        List<Barrio> TraerBarrios();
+        bool Crear(Cliente cliente);        
+        List<Barrio> TraerBarrios();        
+        Cliente TraerClienteId(int id);
     }
 }

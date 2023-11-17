@@ -153,6 +153,7 @@
             btnConsultar.TabIndex = 1;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // dataGridView1
             // 
