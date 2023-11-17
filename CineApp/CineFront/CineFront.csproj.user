@@ -5,6 +5,9 @@
     <Compile Update="Presentacion\Formularios\FrmAltaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Presentacion\Formularios\FrmAltaComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Presentacion\Formularios\FrmAltaPelicula.cs">
       <SubType>Form</SubType>
     </Compile>

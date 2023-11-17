@@ -12,18 +12,5 @@ namespace CineBack.Entidades
         public int IdForma_pago { get; set; }
         public int IdEmpleado { get; set; }
         public int CantEntradas { get; set; }
-        public List<Tickets> lTickets { get; set; }
-        public Comprobante()
-        {
-            lTickets = new List<Tickets>();
-        }
-        public void AgregarTicket(Tickets ticket)
-        {
-            lTickets.Add(ticket);
-        }
-        public void QuitarTicket(int posicion)
-        {
-            lTickets.RemoveAt(posicion);
-        }
     }
 }

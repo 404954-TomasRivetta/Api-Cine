@@ -14,39 +14,11 @@ namespace CineBack.Datos.Implementacion
     {
         public bool Borrar(int id_pel)
         {
-            bool resultado = true;
-            
-            SqlConnection conexion = HelperDB.ObtenerInstancia().ObtenerConexion();
-            SqlTransaction t = null;
-            try
-            {
-                conexion.Open();
-                t = conexion.BeginTransaction();
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexion;
-                comando.Transaction = t;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_BORRAR_PELICULA";
-                comando.Parameters.AddWithValue("@id_pelicula", id_pel);
-                comando.ExecuteNonQuery();
-                t.Commit();
-            }
-            catch
-            {
-                if (t != null)
-                {
-                    t.Rollback();
-                    resultado = false;
-                }
-            }
-            finally
-            {
-                if (conexion != null && conexion.State == ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
-            }
-            return resultado;
+            string sp = "SP_ELIMINAR_PELICULA";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@idPelicula", id_pel));
+            int afectadas = HelperDB.ObtenerInstancia().EjecutarSQL(sp, lst);
+            return afectadas > 0;
         }
 
         public bool Crear(Pelicula pelicula)
@@ -203,6 +175,37 @@ namespace CineBack.Datos.Implementacion
                 lTipoPublicos.Add(t);
             }
             return lTipoPublicos;
+        }
+
+        public List<Pelicula> ObtenerPeliculasFiltradas(int tipoPelicula, int tipoPublico, int dialecto)
+        {
+            List<Pelicula> peliculas = new List<Pelicula>();
+            string sp = "[dbo].[SP_FILTRAR_PELICULA]";
+
+            List<Parametro> lst = new List<Parametro>();
+
+            lst.Add(new Parametro("@genero", tipoPelicula != 0 ? tipoPelicula : DBNull.Value));
+            lst.Add(new Parametro("@publico", tipoPublico != 0 ? tipoPublico : DBNull.Value));
+            lst.Add(new Parametro("@dialecto", dialecto != 0 ? dialecto : DBNull.Value));
+
+            DataTable dt = HelperDB.ObtenerInstancia().Consultar(sp, lst);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                Pelicula pelicula = new Pelicula();
+
+                pelicula.IdPelicula = Convert.ToInt32(row[0].ToString());
+                pelicula.Descripcion = row[1].ToString();
+                pelicula.TipoPelicula = row[2].ToString();
+                pelicula.Idioma = row[3].ToString();
+                pelicula.TipoPublico = row[4].ToString();
+                pelicula.Subtitulada = Convert.ToInt32(row[5].ToString());
+                pelicula.Director = row[6].ToString();
+
+                peliculas.Add(pelicula);
+            }
+
+            return peliculas;
         }
     }
 }

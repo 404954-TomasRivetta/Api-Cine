@@ -81,6 +81,23 @@ namespace CineApi.Controllers
         }
 
 
+        [HttpGet("/clientesFiltrados")]
+        public IActionResult GetClientesFiltrados(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
+        {
+            List<Cliente> lst = null;
+            try
+            {
+
+                lst = app.GetClientesFiltrados2(FechaDesde, FechaHasta, idBarrio, apellido);
+                return Ok(lst);
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
+
         //// GET api/<ClienteController>/5
         //[HttpGet("{id}")]
         //public string Get(int id)

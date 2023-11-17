@@ -39,9 +39,15 @@ namespace CineBack.Fachada.Implementacion
             return dao.Borrar(oCliente);
         }
 
+<<<<<<< HEAD
         public async Task <Cliente> GetClientesIdAsync(int id)
         {
             return dao.TraerClienteId(id);
+=======
+        public List<Cliente> GetClientesFiltrados2(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
+        {
+            return dao.ObtenerClientesFiltrados(FechaDesde, FechaHasta, idBarrio, apellido);
+>>>>>>> f4cf6cf7b06d82b0446dc4567daf204543900e4a
         }
     }
 }

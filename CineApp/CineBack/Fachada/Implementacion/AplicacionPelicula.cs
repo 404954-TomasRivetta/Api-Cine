@@ -46,5 +46,15 @@ namespace CineBack.Fachada.Implementacion
         {
             return dao.Crear(oPelicula);
         }
+
+        public List<Pelicula> GetPeliculasFiltradas(int tipoPelicula, int tipoPublico, int dialecto)
+        {
+            return dao.ObtenerPeliculasFiltradas(tipoPelicula, tipoPublico, dialecto);
+        }
+
+        public bool DeletePelicula(int idPelicula)
+        {
+            return dao.Borrar(idPelicula);
+        }
     }
 }

@@ -14,6 +14,14 @@ namespace CineBack.Entidades
         public int IdTipoPublico { get; set; }
         public int Subtitulada { get; set; }
         public int IdDirector { get; set; }
+
+        public int IdPelicula { get; set; }
+
+        public string TipoPelicula { get; set; }
+        public string Idioma { get; set; }
+        public string TipoPublico { get; set; }
+        public string Director { get; set; }
+
         public Pelicula()
         {
             Descripcion = string.Empty;
@@ -31,6 +39,17 @@ namespace CineBack.Entidades
             IdTipoPelicula =tipo_pub;
             Subtitulada =sub;
             IdDirector =dir;
+        }
+
+        public Pelicula(int idPelicula, string descripcion, string tipoPelicula, string idioma, string tipoPublico, string director)
+        {
+            IdPelicula = idPelicula;
+            Descripcion = descripcion;
+            TipoPelicula = tipoPelicula;
+            Idioma = idioma;
+            TipoPublico = tipoPublico;
+            Director = director;
+
         }
     }
 }

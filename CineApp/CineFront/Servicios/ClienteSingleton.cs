@@ -59,6 +59,7 @@ namespace CineFront.Servicio
 
             return response;
         }
+<<<<<<< HEAD
         public async Task<string> PutAsync(string urlPut, string dataJson)
         {
             StringContent content = new StringContent(dataJson, Encoding.UTF8, "application/json");
@@ -74,5 +75,16 @@ namespace CineFront.Servicio
             return response;
         }
 
+=======
+
+        public async Task<string> DeleteAsync(string url)
+        {
+            var result = await client.DeleteAsync(url);
+            var response = "";
+            if (result.IsSuccessStatusCode)
+                response = await result.Content.ReadAsStringAsync();
+            return response;
+        }
+>>>>>>> f4cf6cf7b06d82b0446dc4567daf204543900e4a
     }
 }

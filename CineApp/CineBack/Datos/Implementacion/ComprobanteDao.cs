@@ -29,7 +29,7 @@ namespace CineBack.Datos.Implementacion
                 comando.Parameters.AddWithValue("@id_cliente", oC.IdCliente);
                 comando.Parameters.AddWithValue("@id_forma_pago", oC.IdForma_pago);
                 comando.Parameters.AddWithValue("@id_empleado", oC.IdEmpleado);
-                comando.Parameters.AddWithValue("@cant_estradas", oC.CantEntradas);
+                comando.Parameters.AddWithValue("@cant_entradas", oC.CantEntradas);
                 comando.ExecuteNonQuery();
                 t.Commit();
             }
@@ -58,7 +58,7 @@ namespace CineBack.Datos.Implementacion
             foreach (DataRow fila in tabla.Rows)
             {
                 int cod = int.Parse(fila["id_cliente"].ToString());
-                string nom = fila["colNombre"].ToString();
+                string nom = fila["nombre"].ToString();
                 string ape = fila["apellido"].ToString();
                 string correo = fila["correo"].ToString();
                 int tel = int.Parse(fila["nro_tel"].ToString());
