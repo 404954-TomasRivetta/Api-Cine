@@ -18,5 +18,8 @@ namespace CineBack.Datos.Interfaz
         List<TipoPublico> TraerTiposPublico();
         List<Director> TraerDirectores();
 
+        List<Pelicula> ObtenerPeliculasFiltradas(int tipoPelicula, int tipoPublico, int dialecto);
+
+
     }
 }

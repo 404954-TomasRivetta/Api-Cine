@@ -39,14 +39,21 @@
             cboGenero = new ComboBox();
             label1 = new Label();
             btnConsultar = new Button();
-            dataGridView1 = new DataGridView();
+            dgvPeliculasFiltradas = new DataGridView();
+            ColId = new DataGridViewTextBoxColumn();
+            ColNomPelicula = new DataGridViewTextBoxColumn();
+            ColTipoPelicula = new DataGridViewTextBoxColumn();
+            ColDialecto = new DataGridViewTextBoxColumn();
+            ColTipoPublico = new DataGridViewTextBoxColumn();
+            ColSubtitulo = new DataGridViewTextBoxColumn();
+            ColDirector = new DataGridViewTextBoxColumn();
             grpFiltros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPeliculasFiltradas).BeginInit();
             SuspendLayout();
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(25, 386);
+            btnEditar.Location = new Point(60, 482);
             btnEditar.Margin = new Padding(4, 3, 4, 3);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(136, 35);
@@ -56,17 +63,18 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(192, 386);
+            btnEliminar.Location = new Point(227, 482);
             btnEliminar.Margin = new Padding(4, 3, 4, 3);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(136, 35);
             btnEliminar.TabIndex = 14;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(639, 386);
+            btnSalir.Location = new Point(674, 482);
             btnSalir.Margin = new Padding(4, 3, 4, 3);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(136, 35);
@@ -84,7 +92,7 @@
             grpFiltros.Controls.Add(cboGenero);
             grpFiltros.Controls.Add(label1);
             grpFiltros.Controls.Add(btnConsultar);
-            grpFiltros.Location = new Point(25, 30);
+            grpFiltros.Location = new Point(60, 40);
             grpFiltros.Margin = new Padding(4, 3, 4, 3);
             grpFiltros.Name = "grpFiltros";
             grpFiltros.Padding = new Padding(4, 3, 4, 3);
@@ -104,6 +112,7 @@
             // 
             // cboIdioma
             // 
+            cboIdioma.DropDownStyle = ComboBoxStyle.DropDownList;
             cboIdioma.FormattingEnabled = true;
             cboIdioma.Location = new Point(460, 27);
             cboIdioma.Name = "cboIdioma";
@@ -112,6 +121,7 @@
             // 
             // cboPublico
             // 
+            cboPublico.DropDownStyle = ComboBoxStyle.DropDownList;
             cboPublico.FormattingEnabled = true;
             cboPublico.Location = new Point(260, 27);
             cboPublico.Name = "cboPublico";
@@ -129,6 +139,7 @@
             // 
             // cboGenero
             // 
+            cboGenero.DropDownStyle = ComboBoxStyle.DropDownList;
             cboGenero.FormattingEnabled = true;
             cboGenero.Location = new Point(64, 27);
             cboGenero.Name = "cboGenero";
@@ -153,32 +164,83 @@
             btnConsultar.TabIndex = 1;
             btnConsultar.Text = "Consultar";
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
-            // dataGridView1
+            // dgvPeliculasFiltradas
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(25, 172);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(750, 150);
-            dataGridView1.TabIndex = 16;
+            dgvPeliculasFiltradas.AllowUserToAddRows = false;
+            dgvPeliculasFiltradas.AllowUserToDeleteRows = false;
+            dgvPeliculasFiltradas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvPeliculasFiltradas.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvPeliculasFiltradas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPeliculasFiltradas.Columns.AddRange(new DataGridViewColumn[] { ColId, ColNomPelicula, ColTipoPelicula, ColDialecto, ColTipoPublico, ColSubtitulo, ColDirector });
+            dgvPeliculasFiltradas.Location = new Point(60, 182);
+            dgvPeliculasFiltradas.Name = "dgvPeliculasFiltradas";
+            dgvPeliculasFiltradas.ReadOnly = true;
+            dgvPeliculasFiltradas.RowTemplate.Height = 25;
+            dgvPeliculasFiltradas.Size = new Size(750, 275);
+            dgvPeliculasFiltradas.TabIndex = 16;
+            // 
+            // ColId
+            // 
+            ColId.HeaderText = "Id Pelicula";
+            ColId.Name = "ColId";
+            ColId.ReadOnly = true;
+            // 
+            // ColNomPelicula
+            // 
+            ColNomPelicula.HeaderText = "Pelicula";
+            ColNomPelicula.Name = "ColNomPelicula";
+            ColNomPelicula.ReadOnly = true;
+            // 
+            // ColTipoPelicula
+            // 
+            ColTipoPelicula.HeaderText = "Genero";
+            ColTipoPelicula.Name = "ColTipoPelicula";
+            ColTipoPelicula.ReadOnly = true;
+            // 
+            // ColDialecto
+            // 
+            ColDialecto.HeaderText = "Idioma";
+            ColDialecto.Name = "ColDialecto";
+            ColDialecto.ReadOnly = true;
+            // 
+            // ColTipoPublico
+            // 
+            ColTipoPublico.HeaderText = "TipoPublico";
+            ColTipoPublico.Name = "ColTipoPublico";
+            ColTipoPublico.ReadOnly = true;
+            // 
+            // ColSubtitulo
+            // 
+            ColSubtitulo.HeaderText = "Subtitulada";
+            ColSubtitulo.Name = "ColSubtitulo";
+            ColSubtitulo.ReadOnly = true;
+            // 
+            // ColDirector
+            // 
+            ColDirector.HeaderText = "Director";
+            ColDirector.Name = "ColDirector";
+            ColDirector.ReadOnly = true;
             // 
             // FrmConsultarPeliculas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(865, 562);
+            Controls.Add(dgvPeliculasFiltradas);
             Controls.Add(btnEditar);
             Controls.Add(btnEliminar);
             Controls.Add(btnSalir);
             Controls.Add(grpFiltros);
+            MaximumSize = new Size(881, 601);
+            MinimumSize = new Size(881, 601);
             Name = "FrmConsultarPeliculas";
             Text = "Consulta de Peliculas";
             Load += FrmConsultarPeliculas_Load;
             grpFiltros.ResumeLayout(false);
             grpFiltros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvPeliculasFiltradas).EndInit();
             ResumeLayout(false);
         }
 
@@ -189,12 +251,19 @@
         private Button btnSalir;
         private GroupBox grpFiltros;
         private Button btnConsultar;
-        private DataGridView dataGridView1;
+        private DataGridView dgvPeliculasFiltradas;
         private Label label3;
         private ComboBox cboIdioma;
         private ComboBox cboPublico;
         private Label label2;
         private ComboBox cboGenero;
         private Label label1;
+        private DataGridViewTextBoxColumn ColId;
+        private DataGridViewTextBoxColumn ColNomPelicula;
+        private DataGridViewTextBoxColumn ColTipoPelicula;
+        private DataGridViewTextBoxColumn ColDialecto;
+        private DataGridViewTextBoxColumn ColTipoPublico;
+        private DataGridViewTextBoxColumn ColSubtitulo;
+        private DataGridViewTextBoxColumn ColDirector;
     }
 }

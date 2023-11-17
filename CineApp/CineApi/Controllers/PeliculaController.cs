@@ -114,5 +114,41 @@ namespace CineApi.Controllers
                 return StatusCode(500, "Error interno!!! Intente luego");
             }
         }
+
+        [HttpGet("/peliculas")]
+        public IActionResult GetPeliculas(int tipoPelicula, int tipoPublico, int dialecto)
+        {
+            List<Pelicula> lst = null;
+            try
+            {
+
+                lst = app.GetPeliculasFiltradas(tipoPelicula, tipoPublico, dialecto);
+                return Ok(lst);
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
+
+        [HttpDelete("/DeletePelicula")]
+        public IActionResult DeletePelicula(int idPelicula)
+        {
+            try
+            {
+                if (idPelicula == 0)
+                {
+                    return BadRequest("Numero de pelicula incorrecta");
+                }
+                bool eliminado = app.DeletePelicula(idPelicula);
+                return Ok(eliminado);
+
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego");
+            }
+        }
     }
 }

@@ -59,5 +59,14 @@ namespace CineFront.Servicio
 
             return response;
         }
+
+        public async Task<string> DeleteAsync(string url)
+        {
+            var result = await client.DeleteAsync(url);
+            var response = "";
+            if (result.IsSuccessStatusCode)
+                response = await result.Content.ReadAsStringAsync();
+            return response;
+        }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
+    "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
         "projectName": "CineBack",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\obj\\",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj",
+        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,7 +59,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,25 +69,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
         "projectName": "CineFront",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineFront\\obj\\",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineFront\\CineFront.csproj",
+        "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -96,8 +97,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\dato\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+              "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
+                "projectPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
               }
             }
           }
@@ -135,7 +136,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -147,7 +149,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
