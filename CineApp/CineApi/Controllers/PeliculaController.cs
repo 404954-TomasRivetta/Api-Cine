@@ -150,5 +150,31 @@ namespace CineApi.Controllers
                 return StatusCode(500, "Error interno! Intente luego");
             }
         }
+
+        [HttpPut("pelicula_modificar/{id}")]
+        public async Task<IActionResult> ModifyPelicula(int id, Pelicula peli)
+        {
+            try
+            {
+                if (peli == null)
+                {
+                    return BadRequest("Pelicula Invalida, FALTAN CAMPOS...");
+                }
+
+                bool result = app.ModifyPelicula(peli);
+                if (result)
+                {
+                    return Ok("Pelicula modificada correctamente");
+                }
+                else
+                {
+                    return BadRequest("No se pudo modificar la pelicula");
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno: {ex.Message}");
+            }
+        }
     }
 }

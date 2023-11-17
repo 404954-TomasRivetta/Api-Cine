@@ -2781,19 +2781,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CESAR\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
+      "projectUniqueName": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\CineApp\\CineApi\\CineApi.csproj",
       "projectName": "CineApi",
-      "projectPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineApi\\CineApi.csproj",
-      "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineApi\\obj\\",
+      "projectPath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\CineApp\\CineApi\\CineApi.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\CineApp\\CineApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2807,8 +2812,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj": {
-              "projectPath": "C:\\Users\\CESAR\\Desktop\\TP\\Api-Cine\\CineApp\\CineBack\\CineBack.csproj"
+            "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\CineApp\\CineBack\\CineBack.csproj": {
+              "projectPath": "C:\\Users\\Administrador\\OneDrive\\Escritorio\\TP CINE\\CineApp\\CineBack\\CineBack.csproj"
             }
           }
         }

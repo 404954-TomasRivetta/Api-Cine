@@ -8,14 +8,13 @@ namespace CineBack.Entidades
 {
     public class Pelicula
     {
+        public int IdPelicula { get; set; }
         public string Descripcion { get; set; }
         public int IdTipoPelicula { get; set; }
         public int IdIdioma { get; set; }
         public int IdTipoPublico { get; set; }
         public int Subtitulada { get; set; }
         public int IdDirector { get; set; }
-
-        public int IdPelicula { get; set; }
 
         public string TipoPelicula { get; set; }
         public string Idioma { get; set; }

@@ -23,5 +23,6 @@ namespace CineBack.Fachada.Interfaz
         List<Pelicula> GetPeliculasFiltradas(int tipoPelicula, int tipoPublico, int dialecto);
 
         bool DeletePelicula(int idPelicula);
+        bool ModifyPelicula(Pelicula pelicula);
     }
 }

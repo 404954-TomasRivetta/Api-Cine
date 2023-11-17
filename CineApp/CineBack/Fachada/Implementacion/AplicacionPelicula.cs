@@ -56,5 +56,10 @@ namespace CineBack.Fachada.Implementacion
         {
             return dao.Borrar(idPelicula);
         }
+
+        public bool ModifyPelicula(Pelicula pelicula)
+        {
+            return dao.Modificar(pelicula);
+        }
     }
 }
