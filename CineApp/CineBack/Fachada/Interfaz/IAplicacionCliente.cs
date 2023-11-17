@@ -13,9 +13,9 @@ namespace CineBack.Fachada.Interfaz
         Task<Cliente> GetClientesIdAsync(int id);
         bool SaveCliente(Cliente oCliente);
 
-        int ModifyCliente(Cliente oCliente);
+        bool ModifyCliente(int id, Cliente oCliente);
 
-        bool DeleteCliente(Cliente oCliente);
+        bool DeleteCliente(int idCliente);
 
 
         List<Cliente> GetClientesFiltrados2(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido);

@@ -173,7 +173,7 @@ namespace prueba
         private void BtnServicios_Click(object sender, EventArgs e)
         {
             //OpenChildForm(new Forms.Servicios(), sender);
-            OpenChildForm(new FrmConsultarCliente(),sender);
+            OpenChildForm(new FrmConsultarCliente(), sender);
         }
 
         private void Btnsalir_Click(object sender, EventArgs e)
@@ -191,6 +191,7 @@ namespace prueba
         private void button1_Click_1(object sender, EventArgs e)
         {
             //OpenChildForm(new Forms.RutaDiara(), sender);
+            OpenChildForm(new FrmAltaComprobante(), sender);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -234,6 +235,18 @@ namespace prueba
         private void button1_Click_2(object sender, EventArgs e)
         {
             OpenChildForm(new FrmAcercaDe(), btnIntegrantes);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmReportePeliculas(), sender);
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmReporteGeneros(), sender);
+
         }
     }
 }

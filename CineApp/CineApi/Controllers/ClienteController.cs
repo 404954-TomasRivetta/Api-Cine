@@ -64,8 +64,8 @@ namespace CineApi.Controllers
                     return BadRequest("Cliente Invalido, FALTAN CAMPOS...");
                 }
 
-                int result = app.ModifyCliente(cliente);
-                if (result>0)
+                bool result = app.ModifyCliente(id,cliente);
+                if (result)
                 {
                     return Ok("Cliente modificado correctamente");
                 }
@@ -98,20 +98,25 @@ namespace CineApi.Controllers
             }
         }
 
-        //// GET api/<ClienteController>/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        [HttpDelete("/DeleteCliente")]
+        public IActionResult DeleteCliente(int idCliente)
+        {
+            try
+            {
+                if (idCliente == 0)
+                {
+                    return BadRequest("Numero de cliente incorrecto");
+                }
+                bool eliminado = app.DeleteCliente(idCliente);
+                return Ok(eliminado);
 
-        //// POST api/<ClienteController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+            }
+            catch (Exception E)
+            {
+                return StatusCode(500, E.Message);
+            }
+        }
 
-        // PUT api/<ClienteController>/5
         [HttpGet("/clientes/{id}")]
         public async Task<IActionResult> Get(int id)
         {

@@ -109,9 +109,9 @@
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label6.Location = new Point(412, 225);
             label6.Name = "label6";
-            label6.Size = new Size(56, 21);
+            label6.Size = new Size(64, 21);
             label6.TabIndex = 5;
-            label6.Text = "Legajo";
+            label6.Text = "113991";
             // 
             // label7
             // 
@@ -119,9 +119,9 @@
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label7.Location = new Point(226, 225);
             label7.Name = "label7";
-            label7.Size = new Size(123, 21);
+            label7.Size = new Size(132, 21);
             label7.TabIndex = 4;
-            label7.Text = "Bertello Valentin";
+            label7.Text = "Bertello Valentino";
             // 
             // label8
             // 
@@ -314,7 +314,7 @@
             MaximumSize = new Size(881, 601);
             MinimumSize = new Size(881, 601);
             Name = "FrmAcercaDe";
-            Text = "FrmAcercaDe";
+            Text = "Acerca De";
             Load += FrmAcercaDe_Load;
             ResumeLayout(false);
             PerformLayout();

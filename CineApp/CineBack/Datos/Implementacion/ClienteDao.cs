@@ -46,12 +46,14 @@ namespace CineBack.Datos.Implementacion
             }
             return c;
         }
-        public int Modificar(Cliente cliente)
+        public bool Modificar(int id,Cliente cliente)
         {
-            int resultado ;                                        
+            bool ok ;
+
+            int resultado = 0;
                 
             List<Parametro>lParametros= new List<Parametro>();
-            lParametros.Add(new Parametro("@id_cliente", cliente.CodCliente));
+            lParametros.Add(new Parametro("@id_cliente", id));
             lParametros.Add(new Parametro("@nombre", cliente.Nombre));
             lParametros.Add(new Parametro("@apellido", cliente.Apellido));
             lParametros.Add(new Parametro("@correo", cliente.Correo));
@@ -60,43 +62,18 @@ namespace CineBack.Datos.Implementacion
             lParametros.Add(new Parametro("@calle", cliente.Calle));
             lParametros.Add(new Parametro("@calle_nro", cliente.CalleNro));
             lParametros.Add(new Parametro("@dni", cliente.Dni));
-            resultado = HelperDB.ObtenerInstancia().EjecutarSQL("SP_MODIFICAR_CLIENTE", lParametros);                                              
-            return resultado;
+            resultado = HelperDB.ObtenerInstancia().EjecutarSQL("SP_MODIFICAR_CLIENTE", lParametros);
+
+            ok = resultado > 0;
+            return ok;
         }
-        public bool Borrar(Cliente cliente)
+        public bool Borrar(int idCliente)
         {
-            bool resultado = true;
-            SqlConnection conexion = HelperDB.ObtenerInstancia().ObtenerConexion();
-            SqlTransaction t = null;
-            try
-            {
-                conexion.Open();
-                t = conexion.BeginTransaction();
-                SqlCommand comando = new SqlCommand();
-                comando.Connection = conexion;
-                comando.Transaction = t;
-                comando.CommandType = CommandType.Text;
-                comando.CommandText = "SP_BORRAR_CLIENTE";
-                comando.Parameters.AddWithValue("@id_cliente", cliente.CodCliente);
-                comando.ExecuteNonQuery();
-                t.Commit();
-            }
-            catch
-            {
-                if (t != null)
-                {
-                    t.Rollback();
-                    resultado = false;
-                }
-            }
-            finally
-            {
-                if (conexion != null && conexion.State == ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
-            }
-            return resultado;
+            string sp = "SP_BORRAR_CLIENTE";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@idCliente", idCliente));
+            int afectadas = HelperDB.ObtenerInstancia().EjecutarSQL(sp, lst);
+            return afectadas > 0;
         }
 
         public bool Crear(Cliente cliente)
@@ -142,9 +119,6 @@ namespace CineBack.Datos.Implementacion
             return resultado;
         }
 
-<<<<<<< HEAD
-        
-=======
         public List<Cliente> ObtenerClientesFiltrados(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
         {
             List<Cliente> clientes = new List<Cliente>();
@@ -169,6 +143,5 @@ namespace CineBack.Datos.Implementacion
 
             return clientes;
         }
->>>>>>> f4cf6cf7b06d82b0446dc4567daf204543900e4a
     }
 }

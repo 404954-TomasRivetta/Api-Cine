@@ -71,10 +71,6 @@ namespace CineFront.Presentacion.Formularios
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-
-        }
-=======
             int genero = Convert.ToInt32(cboGenero.SelectedValue);
             int publico = Convert.ToInt32(cboPublico.SelectedValue);
             int dialecto = Convert.ToInt32(cboIdioma.SelectedValue);
@@ -145,6 +141,11 @@ namespace CineFront.Presentacion.Formularios
                     if (result.Equals("true"))
                     {
                         MessageBox.Show("La pelicula se quitó exitosamente!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int genero = Convert.ToInt32(cboGenero.SelectedValue);
+                        int publico = Convert.ToInt32(cboPublico.SelectedValue);
+                        int dialecto = Convert.ToInt32(cboIdioma.SelectedValue);
+
+                        CargarPeliculasFiltradas(genero, publico, dialecto);
                     }
                     else
                     {
@@ -153,6 +154,5 @@ namespace CineFront.Presentacion.Formularios
                 }
             }
         }
->>>>>>> f4cf6cf7b06d82b0446dc4567daf204543900e4a
     }
 }

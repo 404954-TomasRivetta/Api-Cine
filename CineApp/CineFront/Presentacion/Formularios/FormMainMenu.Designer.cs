@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             panelMenu = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             btnIntegrantes = new Button();
             BtnRutaDiaria = new Button();
             BtnServicios = new Button();
@@ -55,6 +57,8 @@
             // panelMenu
             // 
             panelMenu.BackColor = Color.White;
+            panelMenu.Controls.Add(button2);
+            panelMenu.Controls.Add(button1);
             panelMenu.Controls.Add(btnIntegrantes);
             panelMenu.Controls.Add(BtnRutaDiaria);
             panelMenu.Controls.Add(BtnServicios);
@@ -69,18 +73,56 @@
             panelMenu.TabIndex = 0;
             panelMenu.Paint += panelMenu_Paint;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.MediumTurquoise;
+            button2.Dock = DockStyle.Bottom;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.ForeColor = Color.Black;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleLeft;
+            button2.Location = new Point(0, 538);
+            button2.Name = "button2";
+            button2.Size = new Size(220, 53);
+            button2.TabIndex = 9;
+            button2.Text = "Reporte Peliculas";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.MediumTurquoise;
+            button1.Dock = DockStyle.Bottom;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.Black;
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 591);
+            button1.Name = "button1";
+            button1.Size = new Size(220, 43);
+            button1.TabIndex = 8;
+            button1.Text = "Reporte Generos";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_3;
+            // 
             // btnIntegrantes
             // 
             btnIntegrantes.BackColor = Color.MediumTurquoise;
-            btnIntegrantes.Dock = DockStyle.Top;
+            btnIntegrantes.Dock = DockStyle.Bottom;
             btnIntegrantes.FlatAppearance.BorderSize = 0;
             btnIntegrantes.FlatStyle = FlatStyle.Flat;
             btnIntegrantes.ForeColor = Color.Black;
             btnIntegrantes.Image = (Image)resources.GetObject("btnIntegrantes.Image");
             btnIntegrantes.ImageAlign = ContentAlignment.MiddleLeft;
-            btnIntegrantes.Location = new Point(0, 556);
+            btnIntegrantes.Location = new Point(0, 634);
             btnIntegrantes.Name = "btnIntegrantes";
-            btnIntegrantes.Size = new Size(220, 128);
+            btnIntegrantes.Size = new Size(220, 50);
             btnIntegrantes.TabIndex = 7;
             btnIntegrantes.Text = "Integrantes";
             btnIntegrantes.TextAlign = ContentAlignment.MiddleLeft;
@@ -97,7 +139,7 @@
             BtnRutaDiaria.ForeColor = Color.Black;
             BtnRutaDiaria.Image = (Image)resources.GetObject("BtnRutaDiaria.Image");
             BtnRutaDiaria.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnRutaDiaria.Location = new Point(0, 480);
+            BtnRutaDiaria.Location = new Point(0, 474);
             BtnRutaDiaria.Name = "BtnRutaDiaria";
             BtnRutaDiaria.Size = new Size(220, 76);
             BtnRutaDiaria.TabIndex = 6;
@@ -116,7 +158,7 @@
             BtnServicios.ForeColor = Color.Black;
             BtnServicios.Image = (Image)resources.GetObject("BtnServicios.Image");
             BtnServicios.ImageAlign = ContentAlignment.MiddleLeft;
-            BtnServicios.Location = new Point(0, 420);
+            BtnServicios.Location = new Point(0, 414);
             BtnServicios.Name = "BtnServicios";
             BtnServicios.Size = new Size(220, 60);
             BtnServicios.TabIndex = 4;
@@ -135,7 +177,7 @@
             btnCustomers.ForeColor = SystemColors.ActiveCaptionText;
             btnCustomers.Image = (Image)resources.GetObject("btnCustomers.Image");
             btnCustomers.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCustomers.Location = new Point(0, 360);
+            btnCustomers.Location = new Point(0, 354);
             btnCustomers.Name = "btnCustomers";
             btnCustomers.Size = new Size(220, 60);
             btnCustomers.TabIndex = 3;
@@ -156,7 +198,7 @@
             btnOrders.ImageAlign = ContentAlignment.MiddleLeft;
             btnOrders.Location = new Point(0, 300);
             btnOrders.Name = "btnOrders";
-            btnOrders.Size = new Size(220, 60);
+            btnOrders.Size = new Size(220, 54);
             btnOrders.TabIndex = 2;
             btnOrders.Text = "Peliculas";
             btnOrders.TextAlign = ContentAlignment.MiddleLeft;
@@ -201,11 +243,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Unispace", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonFace;
             label1.Location = new Point(42, 9);
             label1.Name = "label1";
-            label1.Size = new Size(142, 25);
+            label1.Size = new Size(127, 25);
             label1.TabIndex = 1;
             label1.Text = "Cines Pato";
             // 
@@ -250,11 +292,11 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Unispace", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitle.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblTitle.ForeColor = SystemColors.ButtonFace;
             lblTitle.Location = new Point(296, 30);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(90, 25);
+            lblTitle.Size = new Size(68, 25);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Inicio";
             // 
@@ -270,19 +312,19 @@
             // LblSlogan
             // 
             LblSlogan.AutoSize = true;
-            LblSlogan.Font = new Font("Unispace", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            LblSlogan.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             LblSlogan.Location = new Point(372, 570);
             LblSlogan.Name = "LblSlogan";
-            LblSlogan.Size = new Size(142, 25);
+            LblSlogan.Size = new Size(125, 25);
             LblSlogan.TabIndex = 1;
             LblSlogan.Text = "Cines pato";
             LblSlogan.Click += LblSlogan_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(3, 0);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(881, 601);
+            pictureBox1.Size = new Size(887, 604);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -326,6 +368,8 @@
         private System.Windows.Forms.Button BtnRutaDiaria;
         private Label label1;
         private Button btnIntegrantes;
+        private Button button2;
+        private Button button1;
     }
 }
 

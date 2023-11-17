@@ -15,9 +15,15 @@ namespace CineFront.Presentacion.Formularios
 {
     public partial class FrmModificacionCliente : Form
     {
-        public FrmModificacionCliente()
+
+        private Cliente oCliente;
+
+        public FrmModificacionCliente(int idCliente)
         {
             InitializeComponent();
+            oCliente = new Cliente();
+
+            oCliente.CodCliente = idCliente;
         }
 
         private async void FrmModificacionCliente_Load(object sender, EventArgs e)
@@ -93,6 +99,7 @@ namespace CineFront.Presentacion.Formularios
             try
             {
                 Cliente c = new Cliente();
+                c.CodCliente = oCliente.CodCliente;
                 c.Nombre = txtNombre.Text;
                 c.Apellido = txtApellido.Text;
                 c.NroTel = Convert.ToInt32(txtNroTel.Text);
@@ -101,11 +108,10 @@ namespace CineFront.Presentacion.Formularios
                 c.Calle = txtCalle.Text;
                 c.CalleNro = Convert.ToInt32(txtAltura.Text);
                 c.Dni = Convert.ToInt32(txtDni.Text);
-                c.CodCliente = Convert.ToInt32(txtCodigo.Text);
 
 
                 string bodyContent = JsonConvert.SerializeObject(c);
-                string url = "https://localhost:7149/clientes_modificar/{c.CodCliente}";
+                string url = "https://localhost:7149/clientes_modificar/"+c.CodCliente.ToString();
 
                 var result = await ClienteSingleton.GetInstance().PutAsync(url, bodyContent);
                 if (result.Equals("true"))

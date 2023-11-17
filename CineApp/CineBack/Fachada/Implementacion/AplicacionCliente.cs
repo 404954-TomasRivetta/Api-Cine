@@ -29,25 +29,26 @@ namespace CineBack.Fachada.Implementacion
             return dao.Crear(oCliente);
         }
 
-        public int ModifyCliente(Cliente oCliente)
+        public bool ModifyCliente(int id, Cliente oCliente)
         {
-            return dao.Modificar(oCliente);
+            return dao.Modificar(id, oCliente);
         }
 
-        public bool DeleteCliente(Cliente oCliente)
+        public bool DeleteCliente(int idCliente)
         {
-            return dao.Borrar(oCliente);
+            return dao.Borrar(idCliente);
         }
 
-<<<<<<< HEAD
-        public async Task <Cliente> GetClientesIdAsync(int id)
+
+        public async Task<Cliente> GetClientesIdAsync(int id)
         {
             return dao.TraerClienteId(id);
-=======
+        }
+
         public List<Cliente> GetClientesFiltrados2(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
         {
             return dao.ObtenerClientesFiltrados(FechaDesde, FechaHasta, idBarrio, apellido);
->>>>>>> f4cf6cf7b06d82b0446dc4567daf204543900e4a
+
         }
     }
 }

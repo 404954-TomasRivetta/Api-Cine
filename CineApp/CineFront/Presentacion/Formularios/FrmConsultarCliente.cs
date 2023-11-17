@@ -41,7 +41,7 @@ namespace CineFront.Presentacion.Formularios
         {
             if (dtpFechaHasta.Value > DateTime.Now)
             {
-                MessageBox.Show("La fecha hasta no puede ser mayor al dia de hoy", "ERROR", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("La fecha hasta no puede ser mayor al dia de hoy", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             if (string.IsNullOrEmpty(txtApellido.Text))
             {
@@ -89,6 +89,47 @@ namespace CineFront.Presentacion.Formularios
             if (MessageBox.Show("Control", "Seguro desea salir?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Dispose();
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            int nro = int.Parse(dgvClientes.CurrentRow.Cells["Column1"].Value.ToString());
+            new FrmModificacionCliente(nro).ShowDialog();
+        }
+
+        private async void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int nro = int.Parse(dgvClientes.CurrentRow.Cells["Column1"].Value.ToString());
+
+            await EliminarClienteAsync(nro);
+        }
+
+        private async Task EliminarClienteAsync(int nro)
+        {
+            if (MessageBox.Show("Seguro que desea quitar el cliente seleccionado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (dgvClientes.CurrentRow != null)
+                {
+                    string url = "https://localhost:7149/DeleteCliente?idCliente="+nro;
+
+                    var result = await ClienteSingleton.GetInstance().DeleteAsync(url);
+
+                    if (result.Equals("true"))
+                    {
+                        MessageBox.Show("El cliente se quitó exitosamente!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        int idBarrio = Convert.ToInt32(cboBarrio.SelectedValue);
+                        String fecDesde, fecHasta, apelli;
+                        fecDesde = Uri.EscapeDataString(dtpFechaDesde.Value.ToString("yyyy/MM/dd"));
+                        fecHasta = Uri.EscapeDataString(dtpFechaHasta.Value.ToString("yyyy/MM/dd"));
+                        apelli = Uri.EscapeDataString(txtApellido.Text);
+                        cargarClientesFiltrados(idBarrio, fecDesde, fecHasta, apelli);
+                    }
+                    else
+                    {
+                        MessageBox.Show("El cliente NO se quitó exitosamente!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
         }
     }
