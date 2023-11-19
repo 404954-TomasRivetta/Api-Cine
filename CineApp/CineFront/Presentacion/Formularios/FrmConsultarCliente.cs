@@ -39,27 +39,15 @@ namespace CineFront.Presentacion.Formularios
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            if (dtpFechaHasta.Value > DateTime.Now)
-            {
-                MessageBox.Show("La fecha hasta no puede ser mayor al dia de hoy", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (string.IsNullOrEmpty(txtApellido.Text))
-            {
-                MessageBox.Show("El apellido no puede estar vacio", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             int idBarrio = Convert.ToInt32(cboBarrio.SelectedValue);
-            String fecDesde, fecHasta, apelli;
-            fecDesde = Uri.EscapeDataString(dtpFechaDesde.Value.ToString("yyyy/MM/dd"));
-            fecHasta = Uri.EscapeDataString(dtpFechaHasta.Value.ToString("yyyy/MM/dd"));
+            String apelli;
             apelli = Uri.EscapeDataString(txtApellido.Text);
-            cargarClientesFiltrados(idBarrio, fecDesde, fecHasta, apelli);
-
-
+            cargarClientesFiltrados(idBarrio, apelli);
         }
 
-        private async void cargarClientesFiltrados(int idBarrio, string fechaDesde, string fechaHasta, string apellido)
+        private async void cargarClientesFiltrados(int idBarrio, string apellido)
         {
-            string url = $"https://localhost:7149/clientesFiltrados?FechaDesde={fechaDesde}&FechaHasta={fechaHasta}&idBarrio={idBarrio}&apellido={apellido}";
+            string url = $"https://localhost:7149/clientesFiltrados?idBarrio={idBarrio}&apellido={apellido}";
             var result = await ClienteSingleton.GetInstance().GetAsync(url);
             var lst = JsonConvert.DeserializeObject<List<Cliente>>(result);
 
@@ -74,7 +62,7 @@ namespace CineFront.Presentacion.Formularios
                     c.NombreCompleto,
                     c.Correo,
                     c.NombreBarrio,
-                    c.NombrePelicula
+                    c.NroTel
                     });
                 }
             }
@@ -111,7 +99,7 @@ namespace CineFront.Presentacion.Formularios
             {
                 if (dgvClientes.CurrentRow != null)
                 {
-                    string url = "https://localhost:7149/DeleteCliente?idCliente="+nro;
+                    string url = "https://localhost:7149/DeleteCliente?idCliente=" + nro;
 
                     var result = await ClienteSingleton.GetInstance().DeleteAsync(url);
 
@@ -119,11 +107,9 @@ namespace CineFront.Presentacion.Formularios
                     {
                         MessageBox.Show("El cliente se quitó exitosamente!", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         int idBarrio = Convert.ToInt32(cboBarrio.SelectedValue);
-                        String fecDesde, fecHasta, apelli;
-                        fecDesde = Uri.EscapeDataString(dtpFechaDesde.Value.ToString("yyyy/MM/dd"));
-                        fecHasta = Uri.EscapeDataString(dtpFechaHasta.Value.ToString("yyyy/MM/dd"));
+                        String apelli;
                         apelli = Uri.EscapeDataString(txtApellido.Text);
-                        cargarClientesFiltrados(idBarrio, fecDesde, fecHasta, apelli);
+                        cargarClientesFiltrados(idBarrio, apelli);
                     }
                     else
                     {

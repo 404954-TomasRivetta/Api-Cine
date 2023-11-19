@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnEditar = new Button();
             btnEliminar = new Button();
             btnSalir = new Button();
             grpFiltros = new GroupBox();
@@ -47,19 +46,10 @@
             ColTipoPublico = new DataGridViewTextBoxColumn();
             ColSubtitulo = new DataGridViewTextBoxColumn();
             ColDirector = new DataGridViewTextBoxColumn();
+            btnEditar = new Button();
             grpFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPeliculasFiltradas).BeginInit();
             SuspendLayout();
-            // 
-            // btnEditar
-            // 
-            btnEditar.Location = new Point(60, 482);
-            btnEditar.Margin = new Padding(4, 3, 4, 3);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(136, 35);
-            btnEditar.TabIndex = 13;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnEliminar
             // 
@@ -223,13 +213,23 @@
             ColDirector.Name = "ColDirector";
             ColDirector.ReadOnly = true;
             // 
+            // btnEditar
+            // 
+            btnEditar.Location = new Point(60, 482);
+            btnEditar.Margin = new Padding(4, 3, 4, 3);
+            btnEditar.Name = "btnEditar";
+            btnEditar.Size = new Size(136, 35);
+            btnEditar.TabIndex = 17;
+            btnEditar.Text = "Editar";
+            btnEditar.UseVisualStyleBackColor = true;
+            // 
             // FrmConsultarPeliculas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(865, 562);
-            Controls.Add(dgvPeliculasFiltradas);
             Controls.Add(btnEditar);
+            Controls.Add(dgvPeliculasFiltradas);
             Controls.Add(btnEliminar);
             Controls.Add(btnSalir);
             Controls.Add(grpFiltros);
@@ -245,8 +245,6 @@
         }
 
         #endregion
-
-        private Button btnEditar;
         private Button btnEliminar;
         private Button btnSalir;
         private GroupBox grpFiltros;
@@ -265,5 +263,6 @@
         private DataGridViewTextBoxColumn ColTipoPublico;
         private DataGridViewTextBoxColumn ColSubtitulo;
         private DataGridViewTextBoxColumn ColDirector;
+        private Button btnEditar;
     }
 }

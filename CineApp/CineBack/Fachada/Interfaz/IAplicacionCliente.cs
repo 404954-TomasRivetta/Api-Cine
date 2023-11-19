@@ -18,6 +18,6 @@ namespace CineBack.Fachada.Interfaz
         bool DeleteCliente(int idCliente);
 
 
-        List<Cliente> GetClientesFiltrados2(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido);
+        List<Cliente> GetClientesFiltrados2(int idBarrio, string apellido);
     }
 }

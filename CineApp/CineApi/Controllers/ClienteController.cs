@@ -82,13 +82,13 @@ namespace CineApi.Controllers
 
 
         [HttpGet("/clientesFiltrados")]
-        public IActionResult GetClientesFiltrados(DateTime FechaDesde, DateTime FechaHasta, int idBarrio, string apellido)
+        public IActionResult GetClientesFiltrados(int idBarrio, string apellido)
         {
             List<Cliente> lst = null;
             try
             {
 
-                lst = app.GetClientesFiltrados2(FechaDesde, FechaHasta, idBarrio, apellido);
+                lst = app.GetClientesFiltrados2(idBarrio, apellido);
                 return Ok(lst);
 
             }
